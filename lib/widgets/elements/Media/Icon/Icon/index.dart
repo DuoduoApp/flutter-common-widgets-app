@@ -4,13 +4,13 @@ import './demo.dart';
 
 const Text = '''
 ### **简介**
-> 设计图标的标识符。
-- 图标由其名称标示
+> 使用IconData中描述的字体（ 例如素材中预定义的IconDatas） 中的字形绘制的图形图标。 
+- 该图标不是交互示， 只是展示图标样式。 如果对于有交互要求， 可以使用IconButton
 ''';
 const Text1 = '''
 ### **基本用法**
-> 多用于图标的使用选择
-
+- 多用于图标的使用选择 
+- 可对图标设置大小， 颜色， 标签等
 ''';
 
 class Demo extends StatefulWidget {
@@ -19,7 +19,7 @@ class Demo extends StatefulWidget {
   _DemoState createState() => _DemoState();
 }
 
-class _DemoState extends State<Demo> {
+class _DemoState extends State < Demo > {
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
@@ -28,9 +28,23 @@ class _DemoState extends State<Demo> {
       contentList: [
         Text,
         Text1,
-        IconDemo(),
+        IconLayout(),
       ],
       docUrl: 'https://docs.flutter.io/flutter/material/Icons-class.html',
     );
   }
+}
+
+class IconLayout extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return  Row(
+            mainAxisAlignment:  MainAxisAlignment.center,
+            children: < Widget > [
+            IconDemo(curColor: Colors.redAccent, ),
+            IconDemo(curColor: Colors.yellow, )
+          ],
+        );
+  }
+
 }
