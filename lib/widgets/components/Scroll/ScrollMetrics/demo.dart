@@ -2,7 +2,7 @@
  * @Author: 一凨 
  * @Date: 2018-12-15 19:43:41 
  * @Last Modified by: 一凨
- * @Last Modified time: 2018-12-15 20:35:30
+ * @Last Modified time: 2018-12-15 21:37:03
  */
 import 'package:flutter/material.dart';
 
@@ -37,7 +37,7 @@ class _ScrollMetricsDemoState extends State<ScrollMetricsDemo> {
                   itemExtent: 50.0,
                   itemBuilder: (context, index) {
                     return Container(
-                      color: Colors.blue,
+                      color: Theme.of(context).primaryColor,
                       margin: const EdgeInsets.symmetric(vertical: 10.0),
                       child: Text(
                         'test$index',

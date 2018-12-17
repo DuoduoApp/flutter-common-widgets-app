@@ -6,6 +6,7 @@ import './Scrollable/index.dart' as Scrollable;
 import './ScrollbarPainter/index.dart' as ScrollbarPainter;
 import './ScrollMetrics/index.dart' as ScrollMetrics;
 import './ScrollPhysics/index.dart' as ScrollPhysics;
+import './BoxScrollView/index.dart' as BoxScrollView;
 
 List<WidgetPoint> widgetPoints = [
   WidgetPoint(
@@ -32,5 +33,10 @@ List<WidgetPoint> widgetPoints = [
     name: 'ScrollPhysics',
     routerName: ScrollPhysics.Demo.routeName,
     buildRouter: (BuildContext context) => ScrollPhysics.Demo(),
+  ),
+  WidgetPoint(
+    name: 'BoxScrollView',
+    routerName: BoxScrollView.Demo.routeName,
+    buildRouter: (BuildContext context) => BoxScrollView.Demo(),
   ),
 ];

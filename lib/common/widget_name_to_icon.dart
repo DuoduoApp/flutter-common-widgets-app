@@ -95,6 +95,7 @@ class WidgetName2Icon {
     "Scrollable":Icons.swap_vertical_circle,
     "ScrollbarPainter":Icons.format_paint,
     "ScrollMetrics":Icons.camera,
-    "ScrollPhysics":Icons.control_point_duplicate
+    "ScrollPhysics":Icons.control_point_duplicate,
+    "BoxScrollView":Icons.inbox
   };
 }
