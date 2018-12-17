@@ -90,6 +90,12 @@ class WidgetName2Icon {
     "Card":Icons.credit_card,
     "Panel":Icons.panorama_vertical,
     "Navigation":Icons.navigation,
-    "List":Icons.list
+    "List":Icons.list,
+    "ScrollView":Icons.move_to_inbox,
+    "Scrollable":Icons.swap_vertical_circle,
+    "ScrollbarPainter":Icons.format_paint,
+    "ScrollMetrics":Icons.camera,
+    "ScrollPhysics":Icons.control_point_duplicate,
+    "BoxScrollView":Icons.inbox
   };
 }

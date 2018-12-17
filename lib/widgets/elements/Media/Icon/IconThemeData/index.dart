@@ -44,7 +44,6 @@ class IconThemeDataLayout extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-          
             IconThemeDemo(curColor: Colors.red,curOpacity: 1.0,),
             IconThemeDemo(curColor: Colors.red,curOpacity: 0.5,),
             IconThemeDemo(curColor: Colors.red,curOpacity: 0.2,),
