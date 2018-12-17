@@ -9,8 +9,9 @@ const Text = '''
 ''';
 const Text1 = '''
 ### **基本用法**
-> 多用于图标的使用选择
-
+- 创建图像图标,在size和color默认为当前给定的值IconTheme
+- 当你用一个图片时，这个图片会被填充你设置的颜色，只保留图片的形状，
+- 即填充图片像素所在的所有位置
 ''';
 
 class Demo extends StatefulWidget {
@@ -30,7 +31,7 @@ class _DemoState extends State<Demo> {
         Text1,
         ImageIconDemo(),
       ],
-      docUrl: 'https://docs.flutter.io/flutter/material/Icons-class.html',
+      docUrl: 'https://docs.flutter.io/flutter/widgets/ImageIcon-class.html',
     );
   }
 }

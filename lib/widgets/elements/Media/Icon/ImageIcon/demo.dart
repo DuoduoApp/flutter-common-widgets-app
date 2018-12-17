@@ -1,23 +1,16 @@
 /*
  * @Author: 三露 
  * @Date: 2018-12-15 15:19:41 
- * @Last Modified by:   三露 
- * @Last Modified time: 2018-12-15 15:19:41 
+ * @Last Modified by: 三露
+ * @Last Modified time: 2018-12-17 10:07:19
  */
 import 'package:flutter/material.dart';
 
 class ImageIconDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: new IconTheme(
-          data: new IconThemeData(color: Colors.yellow,size: 100.0),
-          child: Container(
-            color: Colors.red,
-            width: 100.0,
-            height: 50.0,
-          )
-      ),
-    );
-  }
+    //注意：当你用一个图片的时候，这个图片会被整个覆盖，只保留图片的形状，填充你设置的颜色
+    return new ImageIcon(new AssetImage('assets/images/btn_icon_dingyuehao_normal.png'),
+    color: Colors.red,size: 50.0,);
+}
 }
