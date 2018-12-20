@@ -15,7 +15,7 @@ const content1 = """
 # Radio
 > material design 风格的单选按钮
 
-Radio widget 代表表单中的单选按钮。
+Radio widget 代表表单中的单选按钮, 当groupValue = value时代表组件被选中。
 
 在表单中, 单选按钮是表示一组互斥选项按钮中的一个。当一个按钮被选中，之前选中的按钮就变为非选中的。
 
@@ -25,14 +25,14 @@ Radio widget 代表表单中的单选按钮。
 const content2 = """
 # 基本用法
 
-````
+```
 new Radio(
     value: value,
     groupValue: groupValue, //当value和groupValue一致的时候则选中
     onChanged: (T){
       onChange(T);
     }
-)
+
 ````
 """;
 class Demo extends StatefulWidget {
