@@ -96,6 +96,8 @@ class WidgetName2Icon {
     "ScrollbarPainter":Icons.format_paint,
     "ScrollMetrics":Icons.camera,
     "ScrollPhysics":Icons.control_point_duplicate,
-    "BoxScrollView":Icons.inbox
+    "BoxScrollView":Icons.inbox,
+    "CustomScrollView":Icons.autorenew,
+    "NestedScrollView":Icons.panorama_fish_eye,
   };
 }
