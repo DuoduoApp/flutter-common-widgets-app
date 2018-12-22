@@ -6,7 +6,9 @@ import 'ChipTheme/index.dart' as ChipTheme;
 import 'ChipThemeData/index.dart' as ChipThemeData;
 import 'ChoiceChip/index.dart' as ChoiceChip;
 import 'FilterChip/index.dart' as FilterChip;
-import 'inputChip/index.dart' as InputChip;
+import 'InputChip/index.dart' as InputChip;
+import 'RawChip/index.dart' as RawChip;
+
 
 List<WidgetPoint> widgetPoints = [
   WidgetPoint(
@@ -38,5 +40,10 @@ List<WidgetPoint> widgetPoints = [
     name: 'InputChip',
     routerName: InputChip.Demo.routeName,
     buildRouter: (BuildContext context) => InputChip.Demo(),
+  ),
+  WidgetPoint(
+    name: 'RawChip',
+    routerName: RawChip.Demo.routeName,
+    buildRouter: (BuildContext context) => RawChip.Demo(),
   ),
 ];

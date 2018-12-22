@@ -10,11 +10,15 @@
 import 'Scroll/index.dart' as Scroll;
 import 'Pick/index.dart' as Pick;
 import 'Chip/index.dart' as Chip;
+import 'Panel/index.dart' as Panel;
+import 'Progress/index.dart' as Progress;
 
 List getWidgets() {
   List result = [];
   result.addAll(Scroll.widgetPoints);
   result.addAll(Pick.widgetPoints);
   result.addAll(Chip.widgetPoints);
+  result.addAll(Panel.widgetPoints);
+  result.addAll(Progress.widgetPoints);
   return result;
 }

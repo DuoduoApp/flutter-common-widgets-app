@@ -2,7 +2,7 @@
  * @Author: 三露 
  * @Date: 2018-12-20 10:19:55 
  * @Last Modified by: 三露
- * @Last Modified time: 2018-12-20 11:02:44
+ * @Last Modified time: 2018-12-21 10:25:22
  */
 import 'package:flutter/material.dart';
 import '../../../../common/widget_demo.dart';
@@ -12,7 +12,7 @@ const String content0 = '''
 ### **简介**
 > 通过使用标签或者描述性词语来过滤内容
 - FilterChip是checkbox或switch widget 的替换品。
- 
+
 ''';
 const String content1 = '''
 ### **基本用法**

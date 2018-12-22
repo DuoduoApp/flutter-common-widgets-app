@@ -1,8 +1,8 @@
 /*
  * @Author: 三露 
- * @Date: 2018-12-20 13:32:22 
+ * @Date: 2018-12-20 20:30:36 
  * @Last Modified by: 三露
- * @Last Modified time: 2018-12-21 11:31:12
+ * @Last Modified time: 2018-12-21 11:23:21
  */
 
 import 'package:flutter/material.dart';
@@ -16,7 +16,6 @@ class InputEntry{
   final String name;
   final String initials;
   const InputEntry(this.name,this.initials);
-  
 }
  
 class _FilterChipDemoState extends State<FilterChipDemo> {
@@ -28,21 +27,22 @@ final List<InputEntry> _lists=<InputEntry>[
     const InputEntry('web', 'W'),
 ];
 
-List<InputEntry> _inputLists=<InputEntry>[];
-Iterable<Widget> get inputWidget sync*{
+List<String> _inputs=<String>[];
+Iterable<Widget> get RawChipWidget sync*{
   for(InputEntry value in _lists){
-    _inputLists.add(value);
     yield Padding(
       padding: const EdgeInsets.all(4.0),
-      child: InputChip(
+      child: RawChip(
         avatar: CircleAvatar(
            backgroundColor: Colors.redAccent.shade400,
            child: Text(value.initials),
         ),
         label: Text(value.name),
         onDeleted: (){
+          // _inputs.add(value.name);
           setState(() {
-                      _lists.remove(value);
+                       _lists.remove(value);
+                       
                     });
          
         },
@@ -57,18 +57,10 @@ Iterable<Widget> get inputWidget sync*{
     return Column(
       children: <Widget>[
          Wrap(
-          children: inputWidget.toList(),
+          children: RawChipWidget.toList(),
         ),
-      //   InputChip(
-      //   label: Text('刷新'),
-      //   onSelected: (bool value){
-          
-      //   },
-      // )
+    
       ],
-
-      
-
     );
   }
 }

@@ -1,27 +1,27 @@
 /*
  * @Author: 三露 
- * @Date: 2018-12-19 15:13:29 
+ * @Date: 2018-12-21 11:35:39 
  * @Last Modified by: 三露
- * @Last Modified time: 2018-12-21 10:22:57
+ * @Last Modified time: 2018-12-21 11:36:23
  */
 
 import 'package:flutter/material.dart';
 import '../../../../common/widget_demo.dart';
-import 'demo.dart';
+// import 'demo.dart';
 
 const String content0 = '''
 ### **简介**
-> 允许从一组选项中进行单一的选择
-- ChoiceChip包含相关的描述性文本或者类别
+> 扩展面板，包含一个标题和一个正文，可以展开或者折叠。面板展开，主体可见。
 
+ 
 ''';
 const String content1 = '''
 ### **基本用法**
-- onSelected : 选择或者取消选择状态间切换调用
+
 ''';
 
 class Demo extends StatefulWidget {
-  static const String routeName = '/components/Chip/ChoiceChip';
+  static const String routeName = '/components/Panel/ExpansionPanel';
   _DemoState createState() => _DemoState();
 }
 
@@ -32,10 +32,10 @@ class _DemoState extends State<Demo> {
         contentList: [
           content0,
           content1,
-         ChoiceChipDemo(),
+          // FilterChipDemo(),
         ],
-        codeUrl: 'components/Chip/ChoiceChip/demo.dart',
-        docUrl:'https://docs.flutter.io/flutter/material/ChoiceChip-class.html',
-        title: 'ChoiceChip');
+        codeUrl: 'components/Chip/RawChip/demo.dart',
+        docUrl:'https://docs.flutter.io/flutter/material/RawChip-class.html',
+        title: 'RawChip');
   }
 }
