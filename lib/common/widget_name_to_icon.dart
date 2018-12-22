@@ -99,5 +99,7 @@ class WidgetName2Icon {
     "BoxScrollView":Icons.inbox,
     "Chip":Icons.border_clear,
     "ChipTheme":Icons.border_bottom,
+    "CustomScrollView":Icons.autorenew,
+    "NestedScrollView":Icons.panorama_fish_eye,
   };
 }
