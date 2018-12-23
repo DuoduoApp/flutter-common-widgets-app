@@ -1,7 +1,5 @@
 import 'package:flutter/widgets.dart';
 
-
-
 /**
  * Author: xiaojia.dxj
  * Date: 2018/11/22
@@ -11,6 +9,7 @@ import 'package:flutter/widgets.dart';
  *
  * Describle:Align描述
  */
+
 class AlignAlignment extends StatelessWidget {
   final Alignment status;
   final String dec;
