@@ -2,6 +2,7 @@ import '../../../../model/widget.dart';
 import "package:flutter/material.dart";
 
 import 'Checkbox/index.dart' as Checkbox;
+import 'CheckboxListTile/index.dart' as CheckboxListTile;
 
 
 List<WidgetPoint> widgetPoints = [
@@ -9,5 +10,10 @@ List<WidgetPoint> widgetPoints = [
     name: 'Checkbox',
     routerName: Checkbox.Demo.routeName,
     buildRouter: (BuildContext context) => Checkbox.Demo(),
+  ),
+  WidgetPoint(
+    name: 'CheckboxListTile',
+    routerName: CheckboxListTile.Demo.routeName,
+    buildRouter: (BuildContext context) => CheckboxListTile.Demo(),
   )
 ];

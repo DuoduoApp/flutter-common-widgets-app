@@ -27,18 +27,18 @@ const String _floatingActionText0 =
 """;
 
 const String _floatingActionText1 =
-"""### **默认 FloatingActionButton**
+"""### **基本用法**
 > 默认参数的按钮和禁用按钮
 - 如果onPressed回调为null，则该按钮将被禁用，并且不会对触摸作出反应,不会变成灰色。
 """;
 
 const String _floatingActionText2 =
-"""### **自定义 FloatingActionButton**
+"""### **进阶用法1**
 > 更改项参数的自定义,比如:边框，点击效果，内容文字,颜色,圆角等
 """;
 
 const String _floatingActionText3 =
-"""### **自定义 FloatingActionButton.extended**
+"""### **进阶用法2**
 > 更改项参数的自定义,比如:边框，点击效果，内容文字,颜色,圆角等
 """;
 
