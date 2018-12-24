@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import '../../../../common/widget_demo.dart';
-// import 'demo.dart';
+import 'demo.dart';
 
 const String content0 = '''
 ### **简介**
@@ -32,10 +32,10 @@ class _DemoState extends State<Demo> {
         contentList: [
           content0,
           content1,
-          // FilterChipDemo(),
+          ExpansionPanelsDemo(),
         ],
-        codeUrl: 'components/Chip/RawChip/demo.dart',
+        codeUrl: 'components/Chip/ExpansionPanel/demo.dart',
         docUrl:'https://docs.flutter.io/flutter/material/RawChip-class.html',
-        title: 'RawChip');
+        title: 'ExpansionPanel');
   }
 }

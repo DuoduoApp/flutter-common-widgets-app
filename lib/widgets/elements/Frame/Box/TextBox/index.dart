@@ -36,10 +36,15 @@ class _DemoState extends State<Demo> {
 Column _creatTexbox() {
   return Column(
     children: <Widget>[
-      Text("TextBox ",),
-//  centerSlice: new Rect.fromLTRB(270.0, 180.0, 1360.0, 730.0),
-//      new TextBox.fromLTRB(270.0, 180.0, 1360.0, 730.0,TextDirection.rtl);
+      // Text("TextBox ",textDirection:  new TextBox.fo,),
+      Container(
+        // child:  TextBox.fromLTRB(270.0, 180.0, 1360.0, 730.0,TextDirection.rtl),
 
+      )
+    
+//  centerSlice: new Rect.fromLTRB(270.0, 180.0, 1360.0, 730.0),
+
+    
     ],
   );
 }

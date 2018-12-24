@@ -77,71 +77,6 @@ class DualHeaderWithHint extends StatelessWidget {
   }
 }
 
-class CollapsibleBody extends StatelessWidget {
-  const CollapsibleBody({
-    this.margin = EdgeInsets.zero,
-    this.child,
-    this.onSave,
-    this.onCancel
-  });
-
-  final EdgeInsets margin;
-  final Widget child;
-  final VoidCallback onSave;
-  final VoidCallback onCancel;
-
-  @override
-  Widget build(BuildContext context) {
-    final ThemeData theme = Theme.of(context);
-    final TextTheme textTheme = theme.textTheme;
-
-    return Column(
-      children: <Widget>[
-        Container(
-          margin: const EdgeInsets.only(
-            left: 24.0,
-            right: 24.0,
-            bottom: 24.0
-          ) - margin,
-          child: Center(
-            child: DefaultTextStyle(
-              style: textTheme.caption.copyWith(fontSize: 15.0),
-              child: child
-            )
-          )
-        ),
-        const Divider(height: 1.0),
-        Container(
-          padding: const EdgeInsets.symmetric(vertical: 16.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: <Widget>[
-              Container(
-                margin: const EdgeInsets.only(right: 8.0),
-                child: FlatButton(
-                  onPressed: onCancel,
-                  child: const Text('CANCEL', style: TextStyle(
-                    color: Colors.black54,
-                    fontSize: 15.0,
-                    fontWeight: FontWeight.w500
-                  ))
-                )
-              ),
-              Container(
-                margin: const EdgeInsets.only(right: 8.0),
-                child: FlatButton(
-                  onPressed: onSave,
-                  textTheme: ButtonTextTheme.accent,
-                  child: const Text('SAVE')
-                )
-              )
-            ]
-          )
-        )
-      ]
-    );
-  }
-}
 
 class DemoItem<T> {
   DemoItem({
@@ -158,7 +93,7 @@ class DemoItem<T> {
   final DemoItemBodyBuilder<T> builder;
   final ValueToString<T> valueToString;
   T value;
-  bool isExpanded = false;
+  bool isExpanded = true;
 
   ExpansionPanelHeaderBuilder get headerBuilder {
     return (BuildContext context, bool isExpanded) {
@@ -175,7 +110,7 @@ class DemoItem<T> {
 }
 
 class ExpansionPanelsDemo extends StatefulWidget {
-  static const String routeName = '/material/expansion_panels';
+  // static const String routeName = '/material/expansion_panels';
 
   @override
   _ExpansionPanelsDemoState createState() => _ExpansionPanelsDemoState();
@@ -204,10 +139,7 @@ class _ExpansionPanelsDemoState extends State<ExpansionPanelsDemo> {
           return Form(
             child: Builder(
               builder: (BuildContext context) {
-                return CollapsibleBody(
-                  onSave: () { Form.of(context).save(); close(); },
-                  onCancel: () { Form.of(context).reset(); close(); },
-                  child: FormField<Location>(
+                return FormField<Location>(
                     initialValue: item.value,
                     onSaved: (Location result) { item.value = result; },
                     builder: (FormFieldState<Location> field) {
@@ -236,8 +168,7 @@ class _ExpansionPanelsDemoState extends State<ExpansionPanelsDemo> {
                         ]
                       );
                     }
-                  ),
-                );
+                  );
               }
             )
           );

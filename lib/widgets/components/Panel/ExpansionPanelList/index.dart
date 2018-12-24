@@ -2,12 +2,12 @@
  * @Author: 三露 
  * @Date: 2018-12-20 20:30:41 
  * @Last Modified by: 三露
- * @Last Modified time: 2018-12-21 10:16:35
+ * @Last Modified time: 2018-12-24 14:32:22
  */
 
 import 'package:flutter/material.dart';
 import '../../../../common/widget_demo.dart';
-// import 'demo.dart';
+import 'demo.dart';
 
 const String content0 = '''
 ### **简介**
@@ -27,7 +27,7 @@ const String content1 = '''
 ''';
 
 class Demo extends StatefulWidget {
-  static const String routeName = '/components/Chip/RawChip';
+  static const String routeName = '/components/Panel/ExpansionPanel';
   _DemoState createState() => _DemoState();
 }
 
@@ -38,7 +38,7 @@ class _DemoState extends State<Demo> {
         contentList: [
           content0,
           content1,
-          // FilterChipDemo(),
+          ExpansionPanelsDemo(),
         ],
         codeUrl: 'components/Chip/RawChip/demo.dart',
         docUrl:'https://docs.flutter.io/flutter/material/RawChip-class.html',
