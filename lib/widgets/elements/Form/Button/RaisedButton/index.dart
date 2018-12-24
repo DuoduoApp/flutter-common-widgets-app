@@ -25,18 +25,18 @@ const String _raisedText0 =
 """;
 
 const String _raisedText1 =
-"""### **默认 RaisedButton**
+"""### **基本用法**
 > 参数的默认的按钮和禁用按钮
 - 如果onPressed回调为null，则该按钮将被禁用，不会对触摸做出反应，并且将按 disabledColor 属性而不是color属性指定的颜色进行着色。
 - 如果您尝试更改按钮的颜色并且没有任何效果，请检查您是否正在传递非null onPressed处理程序。""";
 
 
 const String _raisedText2 =
-"""### **默认 RaisedButton.icon**
-> 按钮图标和标签的小部件创建文本按钮。""";
+"""### **进阶用法1**
+> RaisedButton.icon 的用方法，按钮图标和标签的小部件创建文本按钮。""";
 
 const String _raisedText3 =
-"""### **自定义 RaisedButton**
+"""### **进阶用法2**
 > 更改项参数的自定义,比如:边框，点击效果，内容文字,颜色,圆角等
 - Raised buttons 按钮具有全帽标签，一些内部填充和一些定义的尺寸。
 - 如果您想要水龙头的墨水效果，但又不想使用按钮，请考虑直接使用InkWell。
