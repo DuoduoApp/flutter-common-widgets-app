@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../../common/widget_demo.dart';
-import './demo.dart' as fittedBox;
+import './demo.dart';
 
 const String Text0 = """
 ### **LimitedBox**
@@ -30,20 +30,10 @@ class _DemoState extends State<Demo> {
       contentList: [
         Text0,
         Text1,
-        _LimitedBoxCreate(),
+        LimitedBoxDemo(),
       ],
     );
   }
 
-  LimitedBox _LimitedBoxCreate() {
-    return LimitedBox(
-      maxWidth: 50.0,
-      maxHeight: 50.0,
-      child: Container(
-        width: 250.0,
-        height: 150.0,
-        color: Colors.red,
-      ),
-    );
-  }
+  
 }

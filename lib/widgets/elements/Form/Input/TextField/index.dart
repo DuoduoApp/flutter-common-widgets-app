@@ -18,11 +18,11 @@ const String _textFieldText0 =
 > Text Field “文本字段”
 - 文本字段允许用户输入文本，无论是硬件键盘还是屏幕键盘。
 - 每当用户更改字段中的文本时，文本字段就会调用Onchange的回调。
-- 如果用户指示他们在字段中输入完成（例如，通过按软键盘上的按钮），则文本字段调用onSubmitted回调。。
+- 如果用户指示他们在字段中输入完成（例如，通过按软键盘上的按钮），则文本字段调用onSubmitted回调。
 """;
 
 const String _textFieldText1 =
-"""### **TextField 基本用法**
+"""### **基本用法**
 > 参数的默认的按钮和禁用按钮
 - 默认情况下，文本字段具有在文本字段下方绘制分隔符的修饰。
 - 您可以使用装饰属性来控制装饰，例如通过添加标签或图标。如果将装饰属性设置为空，则将完全删除装饰，包括装饰引入的额外填充，以节省标签的空间。
@@ -30,7 +30,7 @@ const String _textFieldText1 =
 - 若要将TeXFieldField集成到其他FieldFieldWrices窗体中，请考虑使用TeTFrimeField。""";
 
 const String _textFieldText2 =
-"""### **TextField 高阶用法**
+"""### **进阶用法**
 > 实现稍微复杂点的效果，键盘就变成了数字优先，为输入框做一些其他的效果，如提示文字，icon、标签文字等
 - 增加一个keyboardType属性，把keyboardType设置为 TextInputType.number ，让TextField获得焦点的时候弹出的键盘就变成了数字优先。
 - 新增decoration属性，设置相关属性，可以发现当我们的TextField获得焦点时，图标会自动变色，提示文字会自动上移。

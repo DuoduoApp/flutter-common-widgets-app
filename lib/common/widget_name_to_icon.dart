@@ -101,7 +101,20 @@ class WidgetName2Icon {
     "ScrollMetrics":Icons.camera,
     "ScrollPhysics":Icons.control_point_duplicate,
     "BoxScrollView":Icons.inbox,
+    "Chip":Icons.border_clear,
+    "ChipTheme":Icons.border_inner,
     "CustomScrollView":Icons.autorenew,
-    "NestedScrollView":Icons.panorama_fish_eye,
+    "NestedScrollView":Icons.panorama_fish_eye, 
+    "ChipThemeData":Icons.border_outer,
+    "ChoiceChip":Icons.border_bottom,
+    "FilterChip":Icons.border_top,
+    "InputChip":Icons.border_vertical,
+    "RawChip":Icons.border_all,
+    "LinearProgressIndicator":Icons.toys  ,
+    "CircularProgressIndicator":Icons.rotate_left ,
+    "ExpansionPanel":Icons.unfold_less,
+    "ExpansionPanelList":Icons.unfold_more,
+
+
   };
 }

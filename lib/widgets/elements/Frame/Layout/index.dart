@@ -4,6 +4,7 @@ import "package:flutter/material.dart";
 import 'Row/index.dart' as Row;
 import 'Column/index.dart' as Column;
 import 'Container/index.dart' as Container;
+import 'Center/index.dart' as Center;
 
 List<WidgetPoint> widgetPoints = [
   WidgetPoint(
@@ -20,5 +21,10 @@ List<WidgetPoint> widgetPoints = [
     name: 'Container',
     routerName: Container.Demo.routeName,
     buildRouter: (BuildContext context) => Container.Demo(),
+  ),
+   WidgetPoint(
+    name: 'Center',
+    routerName: Center.Demo.routeName,
+    buildRouter: (BuildContext context) => Center.Demo(),
   ),
 ];

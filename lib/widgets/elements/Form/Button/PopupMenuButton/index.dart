@@ -23,13 +23,13 @@ const String _titleText0 = """
 - 如果两者都为null，则创建一个标准 overflow icon（取决于平台）。
 """;
 const String _titleText1 = """
-### **简单示例**
+### **基本用法**
 > 此示例显示一个包含四个项目的菜单
 - 在枚举值之间进行选择，并_selection根据选择设置字段。
 """;
 
 const String _titleText2 = """
-### **自定义属性示例**
+### **进阶用法**
 > 此示例尝试调整所有属性，展示出效果
 - 默认选择第二个。
 - 再次打开,`PopupMenuItem` 保留上次的选择结果。

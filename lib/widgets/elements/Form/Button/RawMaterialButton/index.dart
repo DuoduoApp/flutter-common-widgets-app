@@ -24,12 +24,12 @@ const String _rawMaterialText0 =
 """;
 
 const String _rawMaterialText1 =
-"""### **默认 RawMaterialButton**
+"""### **基本用法**
 > 参数的默认的按钮和禁用按钮
 """;
 
 const String _rawMaterialText2 =
-"""### **自定义 RawMaterialButton**
+"""### **进阶用法**
 > 更改项参数的自定义
 """;
 
