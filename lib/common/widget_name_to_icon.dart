@@ -114,7 +114,7 @@ class WidgetName2Icon {
     "CircularProgressIndicator":Icons.rotate_left ,
     "ExpansionPanel":Icons.unfold_less,
     "ExpansionPanelList":Icons.unfold_more,
-
+    "BottomNavigationBar":Icons.call_to_action
 
   };
 }

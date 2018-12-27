@@ -15,6 +15,7 @@ import 'Panel/index.dart' as Panel;
 import 'Progress/index.dart' as Progress;
 import 'Tab/index.dart' as Ta;
 import 'Menu/index.dart' as Menu;
+import 'Navigation/index.dart' as Navigation;
 
 
 List getWidgets() {
@@ -26,5 +27,6 @@ List getWidgets() {
   result.addAll(Progress.widgetPoints);
   result.addAll(Ta.widgetPoints);
   result.addAll(Menu.widgetPoints);
+  result.addAll(Navigation.widgetPoints);
   return result;
 }
