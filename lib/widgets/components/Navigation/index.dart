@@ -9,16 +9,16 @@
 import "package:flutter/material.dart";
 import '../../../model/widget.dart';
 
-// import 'BottomNavigationBar/index.dart' as BottomNavigationBar;
+import 'BottomNavigationBar/index.dart' as BottomNavigationBar;
 // import 'BottomNavigationBarItem/index.dart' as BottomNavigationBarItem;
-import 'NavigationToolbar/index.dart' as NavigationToolbar;
+//import 'NavigationToolbar/index.dart' as NavigationToolbar;
 
 
 List<WidgetPoint> widgetPoints = [
   WidgetPoint(
-    name: 'NavigationToolbar',
-    routerName: NavigationToolbar.Demo.routeName,
-    buildRouter: (BuildContext context) => NavigationToolbar.Demo(),
+    name: 'BottomNavigationBar',
+    routerName: BottomNavigationBar.Demo.routeName,
+    buildRouter: (BuildContext context) => BottomNavigationBar.Demo(),
   ),
 //  WidgetPoint(
 //    name: 'BottomNavigationBarItem',

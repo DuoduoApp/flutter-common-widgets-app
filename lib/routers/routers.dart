@@ -22,6 +22,7 @@ class Routes {
     widgetDemosList.forEach((demo) {
       Handler handler = new Handler(
           handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+            print('路由123:${demo.buildRouter(context)}');
             return demo.buildRouter(context);
       });
       print('路由:${demo.routerName}');
