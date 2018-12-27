@@ -46,6 +46,7 @@ const contentB = '''
 ### **高级用法**
 > 自定义Slider 样式
 
+如果当前Slider样式 无法满足需求, 可以通过 ** SliderTheme ** 定制复杂样式
 
 ```
 new SliderTheme(
@@ -62,7 +63,11 @@ new SliderTheme(
     overlayColor: Colors.pink,//滑块边缘颜色
   child: new Slider()
 )
+
 ```
+
+### **基本实例**
+
 ''';
 
 class Demo extends StatefulWidget {
@@ -78,11 +83,11 @@ class _Demo extends State<Demo> {
       codeUrl: 'elements/Form/Slider/Slider/demo.dart',
       contentList: [
         contentA,
-        RadioDemo(),
+        SliderDemo(),
         contentB,
-        RadioThemeDemo()
+        SliderThemeDemo()
       ],
-      docUrl: 'https://docs.flutter.io/flutter/material/TextField-class.html',
+      docUrl: 'https://docs.flutter.io/flutter/material/Slider-class.html',
     );
   }
 }

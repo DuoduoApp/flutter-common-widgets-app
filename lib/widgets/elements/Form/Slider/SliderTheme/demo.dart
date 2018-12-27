@@ -1,39 +1,13 @@
 /**
  * Created with Android Studio.
  * User: 三帆
- * Date: 20/12/2018
- * Time: 17:51
+ * Date: 27/12/2018
+ * Time: 14:40
  * email: sanfan.hx@alibaba-inc.com
  * tartget:  xxx
  */
 
 import 'package:flutter/material.dart';
-
-class SliderDemo extends StatefulWidget {
-  _Demo createState() => _Demo();
-}
-
-class _Demo extends State<SliderDemo> {
-  double value = 0.0;
-  Widget build(BuildContext context) {
-    return new Slider(
-      value: value,//实际进度的位置
-      inactiveColor: Colors.black12,//进度中不活动部分的颜色
-      label: 'value: $value',
-      min: 0.0,
-      max: 100.0,
-      divisions: 1000,
-      activeColor: Colors.blue,//进度中活动部分的颜色
-      onChanged: (double){
-        setState(() {
-          value = double.roundToDouble();
-        });
-      },
-    );
-  }
-
-}
-
 
 
 class SliderThemeDemo extends StatefulWidget {
