@@ -83,6 +83,10 @@ class WidgetName2Icon {
     "Scroll":Icons.swap_vertical_circle,
     "Tab":Icons.tab,
     "Menu":Icons.menu,
+    "PopupMenuDivider":Icons.remove,
+    "PopupMenuEntry":Icons.menu,
+    "CheckedPopupMenuItem":Icons.playlist_add_check,
+    "DropdownMenuItem":Icons.playlist_play,
     "Grid":Icons.grid_on,
     "Scaffold":Icons.local_convenience_store,
     "Dialog":Icons.add_alert,
@@ -110,7 +114,7 @@ class WidgetName2Icon {
     "CircularProgressIndicator":Icons.rotate_left ,
     "ExpansionPanel":Icons.unfold_less,
     "ExpansionPanelList":Icons.unfold_more,
-
+    "BottomNavigationBar":Icons.call_to_action
 
   };
 }
