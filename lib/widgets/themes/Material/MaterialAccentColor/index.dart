@@ -15,7 +15,7 @@ const String Text1 = """
 """;
 
 class Demo extends StatefulWidget {
-  static const String routeName = '/element/themes/Material/MaterialPageRoute';
+  static const String routeName = '/element/themes/Material/MaterialAccentColor';
 
   @override
   State<StatefulWidget> createState() => _DemoState();
@@ -25,9 +25,9 @@ class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
-      title: 'MaterialPageRoute',
-      codeUrl: 'elements/themes/Material/MaterialPageRoute',
-      docUrl: 'https://docs.flutter.io/flutter/material/MaterialPageRoute-class.html',
+      title: 'MaterialAccentColor',
+      codeUrl: 'elements/themes/Material/MaterialAccentColor',
+      docUrl: 'https://docs.flutter.io/flutter/material/MaterialAccentColor-class.html',
       contentList: [
         Text0,
         Text1,
