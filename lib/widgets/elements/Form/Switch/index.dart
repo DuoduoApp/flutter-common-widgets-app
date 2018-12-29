@@ -2,6 +2,7 @@ import '../../../../model/widget.dart';
 import "package:flutter/material.dart";
 import "Switch/index.dart" as Switch;
 import "SwitchListTile/index.dart" as SwitchListTile;
+import "AnimatedSwitcher/index.dart" as AnimatedSwitcher;
 
 
 List<WidgetPoint> widgetPoints = [
@@ -14,5 +15,10 @@ List<WidgetPoint> widgetPoints = [
     name: 'SwitchListTile',
     routerName: SwitchListTile.Demo.routeName,
     buildRouter: (BuildContext context) => SwitchListTile.Demo(),
+  ),
+  WidgetPoint(
+    name: 'AnimatedSwitcher',
+    routerName: AnimatedSwitcher.Demo.routeName,
+    buildRouter: (BuildContext context) => AnimatedSwitcher.Demo(),
   )
 ];
