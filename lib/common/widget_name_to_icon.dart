@@ -119,7 +119,15 @@ class WidgetName2Icon {
     "CircularProgressIndicator":Icons.rotate_left ,
     "ExpansionPanel":Icons.unfold_less,
     "ExpansionPanelList":Icons.unfold_more,
-    "BottomNavigationBar":Icons.call_to_action
-
+    "BottomNavigationBar":Icons.call_to_action,
+    "ListView":Icons.view_list ,
+    "ListBody":Icons.list ,
+    "AnimatedList":Icons.format_line_spacing ,
+    "SliverAppBar":Icons.content_paste,
+    "AppBar":Icons.card_membership,
+    "BottomAppBar":Icons.call_to_action,
+    "BottomNavigationBarItem":Icons.crop_original,
+    "FlexibleSpaceBar":Icons.aspect_ratio,
+    "ButtonBar":Icons.branding_watermark
   };
 }

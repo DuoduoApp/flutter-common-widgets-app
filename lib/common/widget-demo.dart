@@ -69,7 +69,7 @@ class WidgetDemo extends StatelessWidget {
               ),
             ])
         ),
-      bottomNavigationBar: (bottomNaviBar is Widget) ? bottomNaviBar : null
+      bottomNavigationBar: (bottomNaviBar is Widget)?bottomNaviBar:null
       );
   }
 }
