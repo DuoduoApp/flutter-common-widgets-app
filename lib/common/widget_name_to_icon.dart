@@ -128,6 +128,7 @@ class WidgetName2Icon {
     "BottomAppBar":Icons.call_to_action,
     "BottomNavigationBarItem":Icons.crop_original,
     "FlexibleSpaceBar":Icons.aspect_ratio,
-    "ButtonBar":Icons.branding_watermark
+    "ButtonBar":Icons.branding_watermark,
+    "SnackBar":Icons.sms_failed
   };
 }

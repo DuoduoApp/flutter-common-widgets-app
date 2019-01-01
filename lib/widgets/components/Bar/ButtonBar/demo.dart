@@ -48,7 +48,7 @@ class ButtonBarLessDefault extends StatelessWidget {
     return Container(
         margin: new EdgeInsets.symmetric(vertical: 0.0),
         height: 100.0,
-        child: ListView(
+        child: new Scrollbar(child:ListView(
             scrollDirection: Axis.horizontal, // 水平listView
             children: <Widget>[
               ButtonBar(
@@ -71,6 +71,6 @@ class ButtonBarLessDefault extends StatelessWidget {
               )
             ]
         )
-    );
+    ));
   }
 }
