@@ -6,7 +6,7 @@
  * email: zhu.yan@alibaba-inc.com
  * tartget: BottomNavigationBar 的示例
  */
-import './customDemo.dart';
+import '../customDemo.dart';
 import '../../../../routers/application.dart';
 import 'dart:math';
 import 'package:flutter/material.dart';

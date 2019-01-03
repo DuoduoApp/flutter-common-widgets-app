@@ -6,7 +6,7 @@
  * email: zhu.yan@alibaba-inc.com
  * tartget: FlatButton 的示例
  */
-import '../../../../common/widget-demo.dart';
+import '../../../common/widget-demo.dart';
 import 'package:flutter/material.dart';
 
 class CustomDemo extends WidgetDemo {
