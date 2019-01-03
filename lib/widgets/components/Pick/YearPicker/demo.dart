@@ -16,7 +16,6 @@ class YearPickerDemo extends StatefulWidget {
 
 class _showDialog extends State<YearPickerDemo>{
   DateTime _date=new DateTime.now();
-  TimeOfDay _time=new TimeOfDay.now();
 
   Future<void> _selectDate(BuildContext context) async {
     final DateTime picked = await showDatePicker(
@@ -34,18 +33,7 @@ class _showDialog extends State<YearPickerDemo>{
     if(picked==null) _date=new DateTime.now();  
   }
 
-  Future<void> _selectTime(BuildContext context) async {
-    final TimeOfDay picked = await showTimePicker(
-      context: context,
-      initialTime: _time
-    );
-    if (picked != null && picked != _time)
-     print("data selectied :${_time.toString()}");
-      setState(() {
-              _time=picked;
-            });
-    if(picked==null) _time=new TimeOfDay.now();  
-  }
+  
 
   
   @override
@@ -59,13 +47,7 @@ class _showDialog extends State<YearPickerDemo>{
               _selectDate(context);
             },
           ),
-          new Text('时间选择'),
-          new RaisedButton(
-            child: new Text('date selected:${_time.toString()}'),
-            onPressed: (){
-              _selectTime(context);
-            },
-          )
+          
         ],
       );
   }
