@@ -2,6 +2,7 @@ import "package:flutter/material.dart";
 import '../../../model/widget.dart';
 
 import 'MaterialPageRoute/index.dart' as MaterialPageRoute;
+import 'MaterialAccentColor/index.dart' as MaterialAccentColor;
 import 'MaterialApp/index.dart' as MaterialApp;
 import 'MaterialButton/index.dart' as MaterialButton;
 import 'MaterialColor/index.dart' as MaterialColor;
@@ -29,6 +30,11 @@ List<WidgetPoint> widgetPoints = [
     buildRouter: (BuildContext context) => MaterialButton.Demo(),
   ),
   
-
+WidgetPoint(
+    name: 'MaterialAccentColor',
+    routerName: MaterialAccentColor.Demo.routeName,
+    buildRouter: (BuildContext context) => MaterialAccentColor.Demo(),
+  ),
+  
   
 ];

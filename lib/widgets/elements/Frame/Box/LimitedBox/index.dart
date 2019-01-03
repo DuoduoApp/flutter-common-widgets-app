@@ -24,7 +24,7 @@ class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
-      title: 'FittedBox',
+      title: 'LimitedBox',
       codeUrl: 'elements/Frame/Box/LimitedBox/demo.dart',
       docUrl: 'https://docs.flutter.io/flutter/widgets/LimitedBox-class.html',
       contentList: [
