@@ -10,10 +10,11 @@ const String Text0 = """### **OverflowBox简介**
 
 const String Text1 = """
 ### **基本用法**
-SizedOverflowBox，一个特定大小的小部件，但将其原始约束传递给它的子节点，然后可能会溢出。
-ConstrainedBox，一个对其子项施加额外约束的小部件。
-UnconstrainedBox，一个试图让它的孩子在没有约束的情况下绘制的容器。
-SizedBox，一个具有指定大小的盒子。
+> OverflowBox设置最大/最小尺寸
+- SizedOverflowBox，一个特定大小的小部件，但将其原始约束传递给它的子节点，然后可能会溢出。
+- ConstrainedBox，一个对其子项施加额外约束的小部件。
+- UnconstrainedBox，一个试图让它的孩子在没有约束的情况下绘制的容器。
+- SizedBox，一个具有指定大小的盒子。
 """;
 
 class Demo extends StatefulWidget {

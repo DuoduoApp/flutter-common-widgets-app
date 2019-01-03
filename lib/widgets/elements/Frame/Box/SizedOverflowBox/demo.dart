@@ -20,10 +20,10 @@ class SizeOverflowBoxDefault extends StatelessWidget {
       alignment: Alignment.centerRight,
       //size属性设置了大小，container 里面的大小失效,
       child: Container(
-        color: Color(0xffe91e63),
+        color: Color(0xfff06292),
         width: 50.0,
         height: 50.0,
-        child: new Text(text),
+        child: new Text(text,style: TextStyle(color:Colors.white),),
       ),
     );
   }
@@ -44,9 +44,10 @@ class SizeBoxDefault extends StatelessWidget {
       child: const Card(
         child: Text(
           'SizedBox',
+          style: TextStyle(color: Colors.white),
           textDirection: TextDirection.rtl,
         ),
-        color: Color(0xffe91e63),
+        color: Color(0xfff06292),
       ),
     );
   }

@@ -10,8 +10,11 @@ const String Text0 = """
 
 const String Text1 = """
 ### **基本用法**
+> widget 限制child最大宽高，如下：
 - maxHeight限制最大高度
 - maxWidth限制最大宽
+
+
 """;
 
 class Demo extends StatefulWidget {

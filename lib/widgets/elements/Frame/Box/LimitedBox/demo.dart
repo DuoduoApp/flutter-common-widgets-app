@@ -6,7 +6,7 @@ class LimitedBoxDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return LimitedBox(
       maxWidth: 50.0,
-      maxHeight: 50.0,
+      maxHeight: 150.0,
       child: Container(
         width: 250.0,
         height: 150.0,

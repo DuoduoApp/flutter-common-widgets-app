@@ -12,13 +12,15 @@ const String Text0 = """### **简介**
 
 const String Text1 = """
 ### **基本用法**
+> 水平布局，设置位置对齐方式
+
 mainAxisSize 属性
 - 一行的高度是有mainAxisSize属性控制，默认是max
 
-mainAxisAlignment属性
+ mainAxisAlignment属性
 - 将children放置在主轴某位置
 
-CrossAxisAlignment 属性
+ CrossAxisAlignment 属性
 - crossAxisAlignment: crossAxisAlignment.center/end/start,
 - 即，根据设定的位置交叉对齐
 """;

@@ -11,6 +11,9 @@ const String Text0 = """### **简介**
 
 const String Text1 = """
 ### **基本用法**
+> widthFacto/heightFactor 非null，将其宽/高度设置为子宽/高度乘以此系数
+- 如果widthFactor是2.0，那么widget的宽度将始终是其子宽度的两倍。
+- 如果heightFactor是2.0，那么widget的高度将始终是其子高度的两倍。
 
 """;
 

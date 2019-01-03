@@ -17,10 +17,10 @@ class ConstracubedBox extends StatelessWidget {
           ),
           child: new Container(
             margin: const EdgeInsets.only(left: 20.0, right: 20.0),
-            //child 宽高超过制定限制范围失效，效果宽/高=100区域
+            //child 宽高超过制定限制范围失效，效果宽/高=100/20区域
             width: 600.0,
             height: 250.0,
-            child: new Text('ConstrainedBox'),
+            child: new Text('ConstrainedBox',style: TextStyle(color: Colors.white),),
             color: Colors.red,
           ),
         ),

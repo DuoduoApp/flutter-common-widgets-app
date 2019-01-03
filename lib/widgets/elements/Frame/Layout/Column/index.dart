@@ -3,13 +3,15 @@ import '../../../../../common/widget_demo.dart';
 import './demo.dart';
 
 const String Text0 = """### **简介**
-> Column 是一个将其孩子显示在竖直方向数组的小部件，于Row相对
+> Column 是一个将其孩子显示在竖直方向数组的widget，于Row相对
 - 将其孩子填充可用的竖直水平空间，默认竖直空间无法滚动，如有很多children，竖直空间饱和无法放置，你可以使用listView搭配使用
 - 如果你只有一个child，只需要使用对齐（Align）或者居中（Center）来展示child
 """;
 
 const String Text1 = """
 ### **基本用法**
+> 竖直布局，设置位置对齐方式
+
 mainAxisSize 属性
 - 一行的高度是有mainAxisSize属性控制，默认是max
 

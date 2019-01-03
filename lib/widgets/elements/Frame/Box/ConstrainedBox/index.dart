@@ -10,6 +10,12 @@ const String _Text = '''
 - 比如说，你限制child最小高度为50.0像素，就可以用constraints: const BoxConstraints(minHeight：50）
 
 ''';
+const String _Text1 = '''
+### **基本用法**
+> 添加额外的限制条件到child上
+- 比如说，你限制child最小高度为50.0像素，就可以用constraints: const BoxConstraints(minHeight：50）
+
+''';
 class Demo extends StatefulWidget {
   static const String routeName = '/element/Frame/Box/ConstrainedBox';
 
@@ -24,6 +30,7 @@ class _DemoState extends State<Demo> {
       codeUrl: 'elements/Frame/Box/ConstrainedBox/demo.dart',
       contentList: [
         _Text, 
+        _Text1,
         ConstracubedBox(),
       ],
       docUrl:

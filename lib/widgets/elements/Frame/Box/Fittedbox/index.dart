@@ -10,6 +10,7 @@ const String Text0 = """
 
 const String Text1 = """
 ### **基本用法**
+> 根据外部约束，调整child
 - 如果外部没有约束，按照child的大小。
 - 如果外部有约束，按照外部约束调整自身大小，然后缩放调整child，根据条件进行放置
 - BoxFix 属性，修改child写入布局时期分配的空间
