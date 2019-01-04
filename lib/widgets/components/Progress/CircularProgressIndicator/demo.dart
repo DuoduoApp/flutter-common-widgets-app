@@ -12,12 +12,27 @@ class _CircularDemoState extends State<CircularDemo> {
   
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 20.0,
-      height: 20.0,
-      child: CircularProgressIndicator(
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: <Widget>[
+        SizedBox(height: 20,width: 20,child:  CircularProgressIndicator(
+        backgroundColor: Colors.red,
       ),
+        ),
+       SizedBox(height: 30,width: 30,child:  CircularProgressIndicator(
+        backgroundColor: Colors.red,
+      ),
+        ),
+       CircularProgressIndicator(
+        backgroundColor: Colors.redAccent,
+      ), SizedBox(height: 50,width: 50,child:  CircularProgressIndicator(
+        backgroundColor: Colors.red,
+      ),
+        ),
+      ],
+
     );
+    
   }
 }
 

@@ -10,14 +10,16 @@ import 'demo.dart';
 
 const String content0 = '''
 ### **简介**
-> 运行选择一年的可滚动年份列表
-- 年份选择器widget很少使用，相反，请考虑使用showDatePicker,它会创建一个日期选择器对话框
+> 显示给定月份的日期，并可以选择一天
+- 该选择器widget很少使用，相反，请考虑使用showDatePicker,它会创建一个日期选择器对话框
 ''';
 const String content1 = '''
 ### **基本用法**
-- 使用firstData,设置用户选择的最早日期
-- 使用lastData,设置用户可选择的最晚日期
-- 使用selectedDate，设置当前选择的日期
+- currentDate,设置显示器当前显示时间
+- displayedMonth ,设置选择器显示天数的月份
+- firstDate,设置选择的最早日期
+- lastDate,设置可选择的最晚日期
+- selectedDate，设置当前选择的日期
 ''';
 
 class Demo extends StatefulWidget {
@@ -35,8 +37,7 @@ class _DemoState extends State<Demo> {
           DayPickerDemo()
         ],
         codeUrl: 'components/Pick/DayPicker/demo.dart',
-        docUrl:
-            'https://docs.flutter.io/flutter/widgets/BoxScrollView-class.html',
+        docUrl:"https://docs.flutter.io/flutter/material/DayPicker-class.html",
         title: 'DayPicker');
   }
 }

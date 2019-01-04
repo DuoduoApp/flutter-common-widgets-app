@@ -8,13 +8,13 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-class DayPickerDemo extends StatefulWidget {
+class ShowDatePickerDemo extends StatefulWidget {
   @override
   State<StatefulWidget> createState() =>_showDialog();
 
 }
 
-class _showDialog extends State<DayPickerDemo>{
+class _showDialog extends State<ShowDatePickerDemo>{
   DateTime _date=new DateTime.now();
   TimeOfDay _time=new TimeOfDay.now();
 

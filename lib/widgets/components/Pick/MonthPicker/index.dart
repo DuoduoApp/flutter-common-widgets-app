@@ -10,14 +10,15 @@ import 'demo.dart';
 
 const String content0 = '''
 ### **简介**
-> 运行选择一年的可滚动年份列表
+> 运行选择一个月的可滚动月份列表
 - 年份选择器widget很少使用，相反，请考虑使用showDatePicker,它会创建一个日期选择器对话框
 ''';
 const String content1 = '''
 ### **基本用法**
-- 使用firstData,设置用户选择的最早日期
-- 使用lastData,设置用户可选择的最晚日期
-- 使用selectedDate，设置当前选择的日期
+- firstData,设置用户选择的最早日期
+- lastData,设置用户可选择的最晚日期
+- selectedDate，设置当前选择的日期
+- onchanged，当用户选择一个月的时候调用
 ''';
 
 class Demo extends StatefulWidget {
@@ -34,9 +35,8 @@ class _DemoState extends State<Demo> {
           content1,
           MothPickerDemo()
         ],
-        codeUrl: 'components/Pick/MothPicker/demo.dart',
-        docUrl:
-            'https://docs.flutter.io/flutter/widgets/BoxScrollView-class.html',
+        codeUrl: 'components/Pick/MonthPicker/demo.dart',
+        docUrl:"https://docs.flutter.io/flutter/material/MonthPicker-class.html",
         title: 'MonthPicker');
   }
 }
