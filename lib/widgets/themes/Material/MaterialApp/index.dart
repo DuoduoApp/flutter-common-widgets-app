@@ -2,7 +2,7 @@
  * @Author: 一凨 
  * @Date: 2018-12-27 16:25:22 
  * @Last Modified by: 一凨
- * @Last Modified time: 2018-12-27 16:29:15
+ * @Last Modified time: 2019-01-07 15:52:45
  */
 import 'package:flutter/material.dart';
 import '../../../../common/widget_demo.dart';
@@ -30,26 +30,6 @@ const String content1 = '''
 - showPerformanceOverlay ： 显示性能标签
 - checkerboardRasterCacheImages 、showSemanticsDebugger、debugShowCheckedModeBanner 各种调试开关
 
-```
-    return new MaterialApp(
-      title: 'title',
-      theme: new ThemeData(
-        primaryColor: Color(ThemeColor),
-        backgroundColor: Color(0xFFEFEFEF),
-        accentColor: Color(0xFF888888),
-        textTheme: TextTheme(
-          //设置Material的默认字体样式
-          body1: TextStyle(color: Color(0xFF888888), fontSize: 16.0),
-        ),
-        iconTheme: IconThemeData(
-          color: Color(ThemeColor),
-          size: 35.0,
-        ),
-      ),
-      home: new MyHomePage(),
-      onGenerateRoute: Application.router.generator,
-    );
-```
 ''';
 
 class Demo extends StatefulWidget {
@@ -67,7 +47,7 @@ class _DemoState extends State<Demo> {
       ],
       title: 'MaterialApp',
       docUrl: 'https://docs.flutter.io/flutter/material/MaterialApp-class.html',
-      codeUrl: 'themes/Material/MaterialApp/demo.dart',
+      codeUrl: '../main.dart',
     );
   }
 }

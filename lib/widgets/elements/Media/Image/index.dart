@@ -2,7 +2,7 @@
  * @Author: 一凨 
  * @Date: 2018-11-16 15:09:19 
  * @Last Modified by: 一凨
- * @Last Modified time: 2018-11-16 15:18:41
+ * @Last Modified time: 2019-01-07 15:37:07
  */
 import '../../../../model/widget.dart';
 import "package:flutter/material.dart";
@@ -18,6 +18,7 @@ import './NetworkImage/index.dart' as NetworkImage;
 import './paintImage/index.dart' as paintImage;
 import './precacheImage/index.dart' as precacheImage;
 import './RawImage/index.dart' as RawImage;
+import './Image/index.dart' as Image;
 
 
 List<WidgetPoint> widgetPoints = [
@@ -75,5 +76,10 @@ List<WidgetPoint> widgetPoints = [
     name: 'RawImage',
     routerName: RawImage.Demo.routeName,
     buildRouter: (BuildContext context) => RawImage.Demo(),
+  ),
+  WidgetPoint(
+    name: 'Image',
+    routerName: Image.Demo.routeName,
+    buildRouter: (BuildContext context) => Image.Demo(),
   ),
 ];

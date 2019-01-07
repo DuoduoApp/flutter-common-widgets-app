@@ -9,8 +9,8 @@ import '../../../../../common/widget_demo.dart';
 import './padding_demo.dart';
 
 const contentDesc0='''
-### **介绍**
-> 非常常用的 widget
+### **简介**
+> widget 内边距
 - 类似于前端中的 div+css:padding 效果
 - Container + padding = Padding
 ''';
