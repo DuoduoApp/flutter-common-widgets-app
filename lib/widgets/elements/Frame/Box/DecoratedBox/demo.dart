@@ -14,7 +14,7 @@ class DecoratedBoxCreate extends StatelessWidget {
         gradient: RadialGradient(
           center: const Alignment(-0.5, -0.6),
           radius: 0.15,
-          colors: <Color>[const Color(0xFFEEEEEE), Colors.black],
+          colors: <Color>[const Color(0xFFEEEEEE), Colors.pink.shade600],
           stops: <double>[0.9, 1.0],
         ),
       ),

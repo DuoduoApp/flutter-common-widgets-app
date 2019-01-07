@@ -34,6 +34,7 @@ class StackDefault extends StatelessWidget {
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 5.0,
+                  color: Colors.white
                 )),
           ],
         ),
@@ -62,6 +63,7 @@ class StackDefault2 extends StatelessWidget {
                   fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 5.0,
+                  color: Colors.white
                 )),
             new Container(
               color: new Color(0xfff48fb1),

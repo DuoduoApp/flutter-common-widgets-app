@@ -25,9 +25,9 @@ class WidgetDemo extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context,[bottomNaviBar]) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: new AppBar(
         title: Text(title),
         actions: <Widget>[
           new IconButton(
@@ -53,7 +53,7 @@ class WidgetDemo extends StatelessWidget {
           ),
         ],
       ),
-      body: Container(
+      body: new Container(
         padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
         child: ListView(
             shrinkWrap: true,
@@ -68,7 +68,8 @@ class WidgetDemo extends StatelessWidget {
                 ],
               ),
             ])
-        )
+        ),
+      bottomNavigationBar: (bottomNaviBar is Widget)?bottomNaviBar:null
       );
   }
 }

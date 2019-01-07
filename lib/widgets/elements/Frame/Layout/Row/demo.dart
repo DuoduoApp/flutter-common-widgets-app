@@ -69,29 +69,30 @@ class RowLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Container(
           margin: new EdgeInsets.only(top: 20.0, bottom: 20.0),
           color: Color(0xfffce4ec),
-          width: 90.0,
+          width: 60.0,
           height: 50.0,
         ),
         Container(
           margin: new EdgeInsets.only(top: 20.0, bottom: 20.0),
           color: Color(0xfff8bbd0),
-          width: 90.0,
+          width: 60.0,
           height: 50.0,
         ),
         Container(
           margin: new EdgeInsets.only(top: 20.0, bottom: 20.0),
           color: Color(0xfff48fb1),
-          width: 90.0,
+          width: 60.0,
           height: 50.0,
         ),
         Container(
           margin: new EdgeInsets.only(top: 20.0, bottom: 20.0),
           color: Color(0xfff06292),
-          width: 90.0,
+          width: 60.0,
           height: 50.0,
         ),
       ],

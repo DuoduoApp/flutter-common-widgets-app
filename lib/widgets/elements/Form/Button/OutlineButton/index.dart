@@ -24,18 +24,18 @@ const String _outlineText0 =
 """;
 
 const String _outlineText1 =
-"""### **默认 OutlineButton**
+"""### **基本用法**
 > 参数的默认的按钮和禁用按钮
 - 如果onPressed回调为null，则该按钮将被禁用，不会对触摸做出反应，并且将按 disabledColor 属性而不是color属性指定的颜色进行着色。
 - 如果您尝试更改按钮的颜色并且没有任何效果，请检查您是否正在传递非null onPressed处理程序。""";
 
 
 const String _outlineText2 =
-"""### **默认 OutlineButton.icon**
-> 按钮图标和标签的小部件创建文本按钮。""";
+"""### **进阶用法1**
+> OutlineButton.icon 的用法，按钮图标和标签的小部件创建文本按钮。""";
 
 const String _outlineText3 =
-"""### **自定义 OutlineButton**
+"""### **进阶用法2**
 > 更改项参数的自定义,比如:边框，点击效果，内容文字,颜色,圆角等
 - Outline buttons 按钮有一个边框，其形状由形状定义 ，其外观由borderSide，disabledBorderColor和highlightedBorderColor定义。
 - 如果您想要水龙头的墨水效果，但又不想使用按钮，请考虑直接使用InkWell。

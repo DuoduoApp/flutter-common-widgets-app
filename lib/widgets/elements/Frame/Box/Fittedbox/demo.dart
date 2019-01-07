@@ -35,7 +35,7 @@ class FittedBoxDefault extends StatelessWidget {
 //              height: 50.0,
 //              width: 50.0,
               color: Colors.red,
-              child: Text('fittedBox'),
+              child: Text('fittedBox',style: TextStyle(color: Colors.white),),
             ),
           ),
         ),

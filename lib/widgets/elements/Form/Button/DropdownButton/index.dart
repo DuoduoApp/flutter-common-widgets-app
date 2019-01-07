@@ -23,11 +23,13 @@ const String _dropdownText0 =
 """;
 
 const String _dropdownText1 =
-"""### **默认 DropdownButton**
+"""### **基本用法**
+> 此示例显示一个包含四个项目的菜单
 """;
 
 const String _dropdownText2 =
-"""### **自定义 DropdownButton**
+"""### **进阶用法**
+> 此示例尝试调整所有属性，展示出效果
 """;
 
 class Demo extends StatefulWidget {

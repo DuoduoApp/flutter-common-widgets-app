@@ -24,6 +24,7 @@ class FloatingActionButtonDefault extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
         // 文本内容
+        backgroundColor:Colors.red,
         child: const Icon(Icons.add),
         heroTag: null, // 不加这个参数会黑屏...
         onPressed: isDisabled ? () {} : null);

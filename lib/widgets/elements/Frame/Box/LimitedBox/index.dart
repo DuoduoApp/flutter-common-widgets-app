@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../../common/widget_demo.dart';
-import './demo.dart' as fittedBox;
+import './demo.dart';
 
 const String Text0 = """
 ### **LimitedBox**
@@ -10,8 +10,11 @@ const String Text0 = """
 
 const String Text1 = """
 ### **基本用法**
+> widget 限制child最大宽高，如下：
 - maxHeight限制最大高度
 - maxWidth限制最大宽
+
+
 """;
 
 class Demo extends StatefulWidget {
@@ -24,26 +27,16 @@ class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
-      title: 'FittedBox',
+      title: 'LimitedBox',
       codeUrl: 'elements/Frame/Box/LimitedBox/demo.dart',
       docUrl: 'https://docs.flutter.io/flutter/widgets/LimitedBox-class.html',
       contentList: [
         Text0,
         Text1,
-        _LimitedBoxCreate(),
+        LimitedBoxDemo(),
       ],
     );
   }
 
-  LimitedBox _LimitedBoxCreate() {
-    return LimitedBox(
-      maxWidth: 50.0,
-      maxHeight: 50.0,
-      child: Container(
-        width: 250.0,
-        height: 150.0,
-        color: Colors.red,
-      ),
-    );
-  }
+  
 }

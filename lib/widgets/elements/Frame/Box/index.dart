@@ -10,6 +10,7 @@ import 'UnconstrainedBox/index.dart' as UnconstrainedBox;
 import 'OverflowBox/index.dart' as OverflowBox;
 import 'FittedBox/index.dart' as FittedBox;
 import 'LimitedBox/index.dart' as LimitedBox;
+import 'RotatedBox/index.dart' as RotatedBox;
 
 List<WidgetPoint> widgetPoints = [
   WidgetPoint(
@@ -57,4 +58,11 @@ List<WidgetPoint> widgetPoints = [
     routerName: LimitedBox.Demo.routeName,
     buildRouter: (BuildContext context) => LimitedBox.Demo(),
   ),
+   
+    WidgetPoint(
+    name: 'RotatedBox',
+    routerName: RotatedBox.Demo.routeName,
+    buildRouter: (BuildContext context) => RotatedBox.Demo(),
+  ),
+   
 ];

@@ -1,3 +1,9 @@
+/*
+ * @Author: 一凨 
+ * @Date: 2018-12-22 20:37:51 
+ * @Last Modified by:   一凨 
+ * @Last Modified time: 2018-12-22 20:37:51 
+ */
 import 'package:flutter/material.dart';
 import '../../../model/widget.dart';
 
@@ -7,6 +13,8 @@ import './ScrollbarPainter/index.dart' as ScrollbarPainter;
 import './ScrollMetrics/index.dart' as ScrollMetrics;
 import './ScrollPhysics/index.dart' as ScrollPhysics;
 import './BoxScrollView/index.dart' as BoxScrollView;
+import './CustomScrollView/index.dart' as CustomScrollView;
+import './NestedScrollView/index.dart' as NestedScrollView;
 
 List<WidgetPoint> widgetPoints = [
   WidgetPoint(
@@ -38,5 +46,15 @@ List<WidgetPoint> widgetPoints = [
     name: 'BoxScrollView',
     routerName: BoxScrollView.Demo.routeName,
     buildRouter: (BuildContext context) => BoxScrollView.Demo(),
+  ),
+  WidgetPoint(
+    name: 'CustomScrollView',
+    routerName: CustomScrollView.Demo.routeName,
+    buildRouter: (BuildContext context) => CustomScrollView.Demo(),
+  ),
+  WidgetPoint(
+    name: 'NestedScrollView',
+    routerName: NestedScrollView.Demo.routeName,
+    buildRouter: (BuildContext context) => NestedScrollView.Demo(),
   ),
 ];

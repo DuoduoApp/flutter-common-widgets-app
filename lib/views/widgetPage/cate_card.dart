@@ -28,9 +28,9 @@ class _CateCardState extends State<CateCard> {
     Cat childCateCondition = new Cat(parentId: parentId);
 
     List<Cat> list = await catControl.getList(childCateCondition);
-    if (list.isNotEmpty) {
-      this.setState(() {
-        this._firstChildList = list;
+    if (list.isNotEmpty&&list.length>=1) {
+      setState(() {
+        _firstChildList = list;
       });
     }
   }

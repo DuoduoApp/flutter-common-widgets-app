@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
 import '../../../../../common/widget_demo.dart';
+import 'demo.dart';
 
-const String _Text = """### **ConstrainedBox**
+
+
+const String _Text = '''
+### **简介**
 > 添加额外的限制条件到child上
 - 比如说，你限制child最小高度为50.0像素，就可以用constraints: const BoxConstraints(minHeight：50）
-""";
 
+''';
+const String _Text1 = '''
+### **基本用法**
+> 添加额外的限制条件到child上
+- 比如说，你限制child最小高度为50.0像素，就可以用constraints: const BoxConstraints(minHeight：50）
+
+''';
 class Demo extends StatefulWidget {
   static const String routeName = '/element/Frame/Box/ConstrainedBox';
 
@@ -18,33 +28,14 @@ class _DemoState extends State<Demo> {
     return WidgetDemo(
       title: 'ConstrainedBox',
       codeUrl: 'elements/Frame/Box/ConstrainedBox/demo.dart',
-      contentList: [_Text, _ConstrainedBoxCreate()],
+      contentList: [
+        _Text, 
+        _Text1,
+        ConstracubedBox(),
+      ],
       docUrl:
           'https://docs.flutter.io/flutter/widgets/ConstrainedBox-class.html',
     );
   }
 
-  Column _ConstrainedBoxCreate() {
-    return new Column(
-      children: <Widget>[
-        ConstrainedBox(
-          //制定一个指定大小的盒子，限定最大最小宽高
-          constraints: const BoxConstraints(
-            minWidth: 100.0,
-            minHeight: 20.0,
-            maxWidth: 500.0,
-            maxHeight: 50.0,
-          ),
-          child: new Container(
-            margin: const EdgeInsets.only(left: 20.0, right: 20.0),
-            //child 宽高超过制定限制范围失效，效果宽/高=100区域
-            width: 600.0,
-            height: 250.0,
-            child: new Text('ConstrainedBox'),
-            color: Colors.red,
-          ),
-        ),
-      ],
-    );
-  }
 }
