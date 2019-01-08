@@ -44,7 +44,7 @@ super(key:key);
               child: Text(
               
               currTitle,
-              style: TextStyle(color: Colors.black,fontSize:14.0),
+              style: TextStyle(color: Colors.black,fontSize:15.0),
               
             ),
             padding: EdgeInsets.only(top: 10.0),

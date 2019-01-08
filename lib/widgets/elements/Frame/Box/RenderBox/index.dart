@@ -1,7 +1,7 @@
 /*
- * @Author: 三露 
+ * @Author: xiaojia.dxj
  * @Date: 2019-01-08 15:56:26 
- * @Last Modified by:   三露 
+ * @Last Modified by:   xiaojia.dxj
  * @Last Modified time: 2019-01-08 15:56:26 
  */
 import 'package:flutter/material.dart';
@@ -28,8 +28,6 @@ class Demo extends StatefulWidget {
 }
 
 class _DemoState extends State<Demo> {
-
-
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(

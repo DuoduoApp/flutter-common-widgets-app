@@ -20,8 +20,8 @@ class ScaffoldDemo extends StatefulWidget {
 * AppBar 默认的实例,有状态
 * */
 class _ScaffoldDemo extends State with SingleTickerProviderStateMixin {
-
   int count = 0;
+
   @override
   void initState() {
     super.initState();
@@ -39,23 +39,22 @@ class _ScaffoldDemo extends State with SingleTickerProviderStateMixin {
     // 这种行为可以通过设置来关闭automaticallyImplyLeading 为false。在这种情况下，空的 leading widget 将导致 middle/title widget 拉伸开始。
     return new SizedBox(
         height: 500,
-        child:new Scaffold(
+        child: new Scaffold(
           appBar: AppBar(
             title: Text('Sample Code'),
           ),
           body: Center(
             child: Text('You have pressed the button times. $count'),
           ),
-          floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+          floatingActionButtonLocation:
+              FloatingActionButtonLocation.centerDocked,
           floatingActionButton: FloatingActionButton(
             onPressed: () => setState(() {
-              count+=1;
-            }),
+                  count += 1;
+                }),
             tooltip: 'Increment Counter',
             child: Icon(Icons.add),
           ),
-        )
-
-    );
+        ));
   }
 }

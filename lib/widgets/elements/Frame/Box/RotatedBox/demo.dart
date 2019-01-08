@@ -6,14 +6,16 @@ class RotatedDemo extends StatelessWidget {
     return Column(
       children: <Widget>[
         RotatedBox(
-      child: const Text('hello  flutter'),
-      quarterTurns: 3,
-    ),
-    SizedBox(height: 20.0,),
-    RotatedBox(
-      child: const Text('hello  flutter'),
-      quarterTurns: 8,
-    )
+          child: const Text('hello  flutter'),
+          quarterTurns: 3,
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        RotatedBox(
+          child: const Text('hello  flutter'),
+          quarterTurns: 8,
+        )
       ],
     );
   }

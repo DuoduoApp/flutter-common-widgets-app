@@ -12,7 +12,7 @@ List<WidgetPoint> widgetPoints = [
     routerName: YearPicker.Demo.routeName,
     buildRouter: (BuildContext context) => YearPicker.Demo(),
   ),
- WidgetPoint(
+  WidgetPoint(
     name: 'MonthPicker',
     routerName: MonthPicker.Demo.routeName,
     buildRouter: (BuildContext context) => MonthPicker.Demo(),
@@ -27,5 +27,4 @@ List<WidgetPoint> widgetPoints = [
     routerName: ShowdatePicker.Demo.routeName,
     buildRouter: (BuildContext context) => ShowdatePicker.Demo(),
   ),
-  
 ];

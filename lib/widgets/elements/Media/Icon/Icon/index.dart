@@ -19,7 +19,7 @@ class Demo extends StatefulWidget {
   _DemoState createState() => _DemoState();
 }
 
-class _DemoState extends State < Demo > {
+class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
@@ -38,13 +38,16 @@ class _DemoState extends State < Demo > {
 class IconLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return  Row(
-            mainAxisAlignment:  MainAxisAlignment.center,
-            children: < Widget > [
-            IconDemo(curColor: Colors.redAccent, ),
-            IconDemo(curColor: Colors.yellow, )
-          ],
-        );
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        IconDemo(
+          curColor: Colors.redAccent,
+        ),
+        IconDemo(
+          curColor: Colors.yellow,
+        )
+      ],
+    );
   }
-
 }

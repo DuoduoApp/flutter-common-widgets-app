@@ -7,7 +7,6 @@
 import 'package:flutter/material.dart';
 
 class MaterialButtonDemo extends StatelessWidget {
-
   final TextStyle txtStyle = TextStyle(color: Colors.white);
 
   @override
@@ -16,22 +15,31 @@ class MaterialButtonDemo extends StatelessWidget {
       child: Column(
         children: <Widget>[
           MaterialButton(
-            onPressed: (){
+            onPressed: () {
               print('click MaterialButton');
             },
-            child:Text('MaterialButton',style: txtStyle,),
+            child: Text(
+              'MaterialButton',
+              style: txtStyle,
+            ),
             color: Theme.of(context).primaryColor,
           ),
           FlatButton.icon(
-            icon: Icon(Icons.bubble_chart,color: Colors.white,),
-            label: Text('FlatButton',style: txtStyle,),
-            onPressed: (){
+            icon: Icon(
+              Icons.bubble_chart,
+              color: Colors.white,
+            ),
+            label: Text(
+              'FlatButton',
+              style: txtStyle,
+            ),
+            onPressed: () {
               print('click FlatButton');
             },
             color: Theme.of(context).primaryColor,
           ),
           RaisedButton(
-            onPressed: (){
+            onPressed: () {
               print('click RaisedButton');
             },
             child: Text('RaisedButton'),

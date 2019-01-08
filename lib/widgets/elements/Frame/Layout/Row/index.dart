@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../../common/widget_demo.dart';
-import './demo.dart' ;
+import './demo.dart';
 
 const String Text0 = """### **简介**
 > Row 是一个将其孩子显示在水平数组的小部件
@@ -38,7 +38,7 @@ class _DemoState extends State<Demo> {
     return WidgetDemo(
       title: 'Row',
       // desc: 'Layout-Row 使用',
-      codeUrl:'elements/Frame/Layout/Row/demo.dart',
+      codeUrl: 'elements/Frame/Layout/Row/demo.dart',
       docUrl: 'https://docs.flutter.io/flutter/widgets/Row-class.html',
       contentList: [
         Text0,
@@ -86,16 +86,11 @@ class _DemoState extends State<Demo> {
         SizedBox(height: 10.0),
         RowMainAxisAlignment(MainAxisAlignment.spaceBetween, null),
         SizedBox(height: 30.0),
-
         RowMainAxisAlignment(MainAxisAlignment.start, null),
         SizedBox(height: 10.0),
         RowMainAxisAlignment(MainAxisAlignment.center, null),
         SizedBox(height: 10.0),
         RowMainAxisAlignment(MainAxisAlignment.end, null),
-
-
-
-
       ],
     );
   }

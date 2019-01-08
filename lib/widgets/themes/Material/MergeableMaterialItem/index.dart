@@ -1,7 +1,7 @@
 /*
- * @Author: 三露 
+ * @Author: xiaojia.dxj
  * @Date: 2019-01-07 16:36:43 
- * @Last Modified by: 三露
+ * @Last Modified by: xiaojia.dxj
  * @Last Modified time: 2019-01-08 14:12:32
  */
 
@@ -23,6 +23,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/themes/Material/MergeableMaterialItem';
+
   _DemoState createState() => _DemoState();
 }
 
@@ -37,8 +38,8 @@ class _DemoState extends State<Demo> {
       ],
       title: "MergeableMaterialItem",
       codeUrl: 'Material/MergeableMaterialItem/demo.dart',
-      docUrl: 'https://docs.flutter.io/flutter/material/MergeableMaterialItem-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/material/MergeableMaterialItem-class.html',
     );
   }
 }
-

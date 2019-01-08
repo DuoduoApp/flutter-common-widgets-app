@@ -1,14 +1,12 @@
 /*
- * @Author: 三露 
+ * @Author: xiaojia.dxj
  * @Date: 2019-01-08 15:56:53 
- * @Last Modified by:   三露 
+ * @Last Modified by:   xiaojia.dxj
  * @Last Modified time: 2019-01-08 15:56:53 
  */
 import 'package:flutter/material.dart';
 import '../../../../../common/widget_demo.dart';
 import 'demo.dart';
-
-
 
 const String _Text = '''
 ### **简介**
@@ -22,6 +20,7 @@ const String _Text1 = '''
 - 比如说，你限制child最小高度为50.0像素，就可以用constraints: const BoxConstraints(minHeight：50）
 
 ''';
+
 class Demo extends StatefulWidget {
   static const String routeName = '/element/Frame/Box/ConstrainedBox';
 
@@ -35,7 +34,7 @@ class _DemoState extends State<Demo> {
       title: 'ConstrainedBox',
       codeUrl: 'elements/Frame/Box/ConstrainedBox/demo.dart',
       contentList: [
-        _Text, 
+        _Text,
         _Text1,
         ConstracubedBox(),
       ],
@@ -43,5 +42,4 @@ class _DemoState extends State<Demo> {
           'https://docs.flutter.io/flutter/widgets/ConstrainedBox-class.html',
     );
   }
-
 }

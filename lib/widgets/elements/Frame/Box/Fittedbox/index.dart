@@ -1,8 +1,11 @@
-/*
- * @Author: 三露 
- * @Date: 2019-01-08 15:56:45 
- * @Last Modified by:   三露 
- * @Last Modified time: 2019-01-08 15:56:45 
+
+/**
+ * Author: xiaojia.dxj
+ * Date: 2019-01-08
+ * Email: xiaojia.dxj@alibaba-inc.com
+ * LastUpdateTime: 2019-01-08
+ * LastUpdateBy: xj.deng
+ *
  */
 import 'package:flutter/material.dart';
 import '../../../../../common/widget_demo.dart';

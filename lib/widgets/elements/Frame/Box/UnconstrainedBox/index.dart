@@ -1,12 +1,12 @@
 /*
- * @Author: 三露 
+ * @Author: xiaojia.dxj
  * @Date: 2019-01-08 15:57:00 
- * @Last Modified by: 三露
+ * @Last Modified by: xiaojia.dxj
  * @Last Modified time: 2019-01-08 16:00:14
  */
 import 'package:flutter/material.dart';
 import '../../../../../common/widget_demo.dart';
-import './demo.dart' ;
+import './demo.dart';
 
 const String Text0 = """### **简介**
 > 跟ConstrainedBox相反，是不添加任何约束条件到child上，让child按照其原始的尺寸渲染
@@ -48,5 +48,4 @@ class _DemoState extends State<Demo> {
       ],
     );
   }
-
 }

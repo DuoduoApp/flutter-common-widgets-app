@@ -58,11 +58,9 @@ List<WidgetPoint> widgetPoints = [
     routerName: LimitedBox.Demo.routeName,
     buildRouter: (BuildContext context) => LimitedBox.Demo(),
   ),
-   
-    WidgetPoint(
+  WidgetPoint(
     name: 'RotatedBox',
     routerName: RotatedBox.Demo.routeName,
     buildRouter: (BuildContext context) => RotatedBox.Demo(),
   ),
-   
 ];

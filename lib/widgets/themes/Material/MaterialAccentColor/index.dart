@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_rookie_book/common/widget_demo.dart';
 import 'package:flutter_rookie_book/widgets/themes/Material/MaterialColor/demo.dart';
 
-
 const Text0 = '''
 ### **简介**
 > 用来定义单一的强调色，以及四种色调的色系
@@ -17,7 +16,8 @@ const String Text1 = """
 """;
 
 class Demo extends StatefulWidget {
-  static const String routeName = '/element/themes/Material/MaterialAccentColor';
+  static const String routeName =
+      '/element/themes/Material/MaterialAccentColor';
 
   @override
   State<StatefulWidget> createState() => _DemoState();
@@ -29,7 +29,8 @@ class _DemoState extends State<Demo> {
     return WidgetDemo(
       title: 'MaterialAccentColor',
       codeUrl: 'elements/themes/Material/MaterialAccentColor',
-      docUrl: 'https://docs.flutter.io/flutter/material/MaterialAccentColor-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/material/MaterialAccentColor-class.html',
       contentList: [
         Text0,
         Text1,
@@ -38,4 +39,3 @@ class _DemoState extends State<Demo> {
     );
   }
 }
-

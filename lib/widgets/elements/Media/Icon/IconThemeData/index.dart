@@ -28,10 +28,10 @@ class _DemoState extends State<Demo> {
       contentList: [
         Text,
         Text1,
-       IconThemeDataLayout()
-       ,
+        IconThemeDataLayout(),
       ],
-      docUrl: 'https://docs.flutter.io/flutter/widgets/IconThemeData-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/widgets/IconThemeData-class.html',
     );
   }
 }
@@ -44,12 +44,23 @@ class IconThemeDataLayout extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            IconThemeDemo(curColor: Colors.red,curOpacity: 1.0,),
-            IconThemeDemo(curColor: Colors.red,curOpacity: 0.5,),
-            IconThemeDemo(curColor: Colors.red,curOpacity: 0.2,),
+            IconThemeDemo(
+              curColor: Colors.red,
+              curOpacity: 1.0,
+            ),
+            IconThemeDemo(
+              curColor: Colors.red,
+              curOpacity: 0.5,
+            ),
+            IconThemeDemo(
+              curColor: Colors.red,
+              curOpacity: 0.2,
+            ),
           ],
         ),
-        SizedBox(height: 20.0,),
+        SizedBox(
+          height: 20.0,
+        ),
         IconThemeDemo2(curColor: Colors.white),
       ],
     );

@@ -25,6 +25,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/themes/Material/MaterialButton';
+
   _DemoState createState() => _DemoState();
 }
 
@@ -39,7 +40,8 @@ class _DemoState extends State<Demo> {
       ],
       title: 'MaterialButton',
       codeUrl: 'Material/MaterialButton/demo.dart',
-      docUrl: 'https://docs.flutter.io/flutter/material/MaterialButton-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/material/MaterialButton-class.html',
     );
   }
 }

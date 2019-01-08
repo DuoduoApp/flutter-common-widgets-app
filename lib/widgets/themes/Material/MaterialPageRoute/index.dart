@@ -28,7 +28,8 @@ class _DemoState extends State<Demo> {
     return WidgetDemo(
       title: 'MaterialPageRoute',
       codeUrl: 'elements/themes/Material/MaterialPageRoute',
-      docUrl: 'https://docs.flutter.io/flutter/material/MaterialPageRoute-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/material/MaterialPageRoute-class.html',
       contentList: [
         Text0,
         Text1,
@@ -37,4 +38,3 @@ class _DemoState extends State<Demo> {
     );
   }
 }
-

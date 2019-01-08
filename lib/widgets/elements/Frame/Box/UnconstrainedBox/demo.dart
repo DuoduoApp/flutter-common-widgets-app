@@ -23,4 +23,5 @@ class UnconstrainedBoxDemo extends StatelessWidget {
 //              'it will align the child based on alignment. If the box cannot expand enough '
 //              'to accommodate the entire child, the child will be clipped'),
     );
-}}
+  }
+}

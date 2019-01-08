@@ -1,7 +1,7 @@
 /*
- * @Author: 三露 
+ * @Author: xiaojia.dxj
  * @Date: 2018-12-17 15:37:16 
- * @Last Modified by: 三露
+ * @Last Modified by: xiaojia.dxj
  * @Last Modified time: 2018-12-17 16:00:07
  */
 import 'package:flutter/material.dart';
@@ -23,7 +23,9 @@ const String content1 = '''
 ''';
 
 class Demo extends StatefulWidget {
-  static const String routeName = '/components/Progress/LinearProgressIndicator';
+  static const String routeName =
+      '/components/Progress/LinearProgressIndicator';
+
   _DemoState createState() => _DemoState();
 }
 
@@ -37,7 +39,8 @@ class _DemoState extends State<Demo> {
           LinearProgressIndicatorDemo(),
         ],
         codeUrl: '/components/Progress/LinearProgressIndicator/demo.dart',
-        docUrl:'https://docs.flutter.io/flutter/material/LinearProgressIndicator-class.html',
+        docUrl:
+            'https://docs.flutter.io/flutter/material/LinearProgressIndicator-class.html',
         title: 'LinearProgressIndicator');
   }
 }
