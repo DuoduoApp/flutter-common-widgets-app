@@ -19,7 +19,7 @@ import './demo.dart' as raisedButton;
 const String _raisedText0 =
 """### **简介**
 > Raised button “凸起按钮”
-- Raised button 基于  a Material widget 窗口小部件，按下按钮时，Material.elevation 会增加。
+- Raised button 基于  a Material widget 窗口widget，按下按钮时，Material.elevation 会增加。
 - 使用 Raised button 可将尺寸添加到大多数平面布局中。
 - 例如在复杂的内容列表中，或在宽阔的空间中。避免在已经提出的内容（例如对话框或卡片）上使用 Raised button 。
 """;
@@ -33,7 +33,7 @@ const String _raisedText1 =
 
 const String _raisedText2 =
 """### **进阶用法1**
-> RaisedButton.icon 的用方法，按钮图标和标签的小部件创建文本按钮。""";
+> RaisedButton.icon 的用方法，按钮图标和标签的widget创建文本按钮。""";
 
 const String _raisedText3 =
 """### **进阶用法2**

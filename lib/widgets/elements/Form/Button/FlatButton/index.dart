@@ -47,7 +47,7 @@ Enjoy!
 
 const String _flatText0 =
 """### **简介**
-> Flat button 是显示在（零高程）material 小部件上的文本标签
+> Flat button 是显示在（零高程）material widget上的文本标签
 - 通过填充颜色对触摸作出反应在工具栏上，
 - 在对话框中使用Flat button，或与其他内容内联，但使用填充从该内容偏移，以便按钮的存在是显而易见的。
 - Flat buttons 故意不具有可见边框，因此必须依赖于它们相对于其他内容的位置以用于上下文。
@@ -62,7 +62,7 @@ const String _flatText1 =
 
 const String _flatText2 =
 """### **进阶用法1**
-> FlatButton.icon，按钮图标和标签的小部件创建文本按钮。""";
+> FlatButton.icon，按钮图标和标签的widget创建文本按钮。""";
 
 const String _flatText3 =
 """### **进阶用法2**
