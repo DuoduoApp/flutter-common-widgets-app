@@ -14,33 +14,6 @@ const contentText0 = '''
 
 从```Image.asset```源码中可以看到
 
-```
-  Image.asset(String name, {
-    Key key,
-    AssetBundle bundle,
-    this.semanticLabel,
-    this.excludeFromSemantics = false,
-    double scale,
-    this.width,
-    this.height,
-    this.color,
-    this.colorBlendMode,
-    this.fit,
-    this.alignment = Alignment.center,
-    this.repeat = ImageRepeat.noRepeat,
-    this.centerSlice,
-    this.matchTextDirection = false,
-    this.gaplessPlayback = false,
-    String package,
-    this.filterQuality = FilterQuality.low,
-  }) : image = scale != null
-         ? ExactAssetImage(name, bundle: bundle, scale: scale, package: package)
-         : AssetImage(name, bundle: bundle, package: package),
-       assert(alignment != null),
-       assert(repeat != null),
-       assert(matchTextDirection != null),
-       super(key: key);
-```
 ''';
 
 const contentText1 = '''
