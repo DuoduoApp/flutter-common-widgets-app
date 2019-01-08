@@ -19,6 +19,9 @@ import 'Navigation/index.dart' as Navigation;
 import 'List/index.dart' as Li;
 import 'Card/index.dart' as Card;
 import 'Bar/index.dart' as Bar;
+import 'Dialog/index.dart' as Dialog;
+import 'Scaffold/index.dart' as Scaffold;
+import 'Grid/index.dart' as GridTile;
 
 
 List getWidgets() {
@@ -34,5 +37,8 @@ List getWidgets() {
   result.addAll(Li.widgetPoints);
   result.addAll(Card.widgetPoints);
   result.addAll(Bar.widgetPoints);
+  result.addAll(Dialog.widgetPoints);
+  result.addAll(Scaffold.widgetPoints);
+  result.addAll(GridTile.widgetPoints);
   return result;
 }
