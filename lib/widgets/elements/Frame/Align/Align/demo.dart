@@ -14,7 +14,8 @@ class AlignAlignment extends StatelessWidget {
   final Alignment status;
   final String dec;
 
-  const AlignAlignment(Alignment this.status, String this.dec) : super();
+  const AlignAlignment(Alignment this.status,
+   String this.dec) : super();
 
   @override
   Widget build(BuildContext context) {
