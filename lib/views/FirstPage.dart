@@ -40,10 +40,8 @@ class FirstPageState extends State<FirstPage> {
     var pageIndex = (params is Map) ? params['pageIndex'] : 0;
     final _param  = {'page':pageIndex,'pageSize':20,'sort':'rankIndex'};
 
-    print('======request==========>:${_param}');
     var response = await NetUtils.get(juejin_flutter, params: _param);
     var responseList = response['d']['entrylist'];
-    print('======response==========>:${responseList}');
     var  pageTotal = response['d']['total'];
     if (!(pageTotal is int) || pageTotal <= 0) {
       pageTotal = 0;
@@ -56,7 +54,6 @@ class FirstPageState extends State<FirstPage> {
         resultList.add(cellData);
       } catch (e) {
         // No specified type, handles all
-        print('Something really unknown: $i');
       }
     }
     Map<String, dynamic> result = {"list":resultList, 'total':pageTotal, 'pageIndex':pageIndex};
@@ -80,7 +77,6 @@ class FirstPageState extends State<FirstPage> {
         margin: new EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
         child:ListTile(
             onTap:(){
-              print('codeUrl:${codeUrl}');
               _launchURL(codeUrl);
             },
             contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),

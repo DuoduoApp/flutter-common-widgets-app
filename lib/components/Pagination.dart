@@ -37,7 +37,6 @@ class Pagination extends StatelessWidget {
 
   List<Widget> _PageSelector(BuildContext context) {
     List<Widget> list = [];
-    print('start');
     /// super.initState();
     arr.forEach((item) {
       bannerStories.add(StoryModel.fromJson(item));
@@ -46,7 +45,6 @@ class Pagination extends StatelessWidget {
 
     if (arr.length > 0) {
       list.add(HomeBanner(bannerStories, (story) {
-        print('==========<>:${story}');
         _launchURL('${story.url}');
       }));
     }

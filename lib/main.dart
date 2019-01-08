@@ -6,6 +6,7 @@ import 'views/FirstPage.dart';
 import 'views/widgetPage.dart';
 import 'views/ThirdPage.dart';
 import 'views/FourthPage.dart';
+import 'views/collection_page.dart';
 import 'routers/routers.dart';
 import 'routers/application.dart';
 import 'common/provider.dart';
@@ -72,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage>
   static List tabData = [
     {'text': '业界动态', 'icon': new Icon(Icons.language)},
     {'text': 'WIDGET', 'icon': new Icon(Icons.extension)},
-    {'text': '官网地址', 'icon': new Icon(Icons.home)},
+    {'text': '组件收藏', 'icon': new Icon(Icons.star)},
     {'text': '关于手册', 'icon': new Icon(Icons.favorite)}
   ];
 
@@ -110,7 +111,6 @@ class _MyHomePageState extends State<MyHomePage>
         targetRouter = item.routerName;
       }
     });
-    print("router> ${targetRouter}");
     Application.router.navigateTo(context, "${targetRouter}");
   }
 
@@ -132,7 +132,6 @@ class _MyHomePageState extends State<MyHomePage>
         return null;
       }
     }, (value) {
-      print("Value>>>$value");
     }, () {});
   }
 
@@ -143,9 +142,7 @@ class _MyHomePageState extends State<MyHomePage>
         body: new TabBarView(controller: controller, children: <Widget>[
           new FirstPage(),
           new WidgetPage(db),
-          new ThirdPage(
-              data2ThirdPage: data2ThirdPage,
-              callback: (val) => _onDataChange(val)),
+          new CollectionPage(),
           new FourthPage()
         ]),
         bottomNavigationBar: new Material(
@@ -174,7 +171,7 @@ class _MyHomePageState extends State<MyHomePage>
                     tabs: <Tab>[
                       new Tab(text: '业界动态', icon: new Icon(Icons.language)),
                       new Tab(text: '组件', icon: new Icon(Icons.extension)),
-                      new Tab(text: '官网地址', icon: new Icon(Icons.home)),
+                      new Tab(text: '组件收藏', icon: new Icon(Icons.star)),
                       new Tab(text: '关于手册', icon: new Icon(Icons.favorite)),
                     ]))));
   }

@@ -35,7 +35,6 @@ class listRefresh extends State<ListRefresh> {
     _scrollController.addListener(() {
       // 如果下拉的当前位置到scroll的最下面
       if (_scrollController.position.pixels == _scrollController.position.maxScrollExtent) {
-        print("loadMore");
         _getMoreData();
       }
     });
@@ -63,10 +62,8 @@ class listRefresh extends State<ListRefresh> {
       setState(() => isLoading = true);
       //if(_hasMore){ // 还有数据可以拉新
       List newEntries = await mokeHttpRequest();
-      //print('==========>>>${items.length}');
       //if (newEntries.isEmpty) {
       _hasMore = (_pageIndex <= _pageTotal);
-      print('====================++++++++++${_pageIndex}:${_pageTotal}');
       setState(() {
         items.addAll(newEntries);
         isLoading = false;
@@ -101,7 +98,6 @@ class listRefresh extends State<ListRefresh> {
   Future<Null> _handleRefresh() async {
     List newEntries = await mokeHttpRequest();
     setState(() {
-      print('refresh');
       items.clear();
       items.addAll(newEntries);
       isLoading = false;
@@ -126,7 +122,6 @@ class listRefresh extends State<ListRefresh> {
   * 上提加载loading的widget,如果数据到达极限，显示没有更多
   * */
   Widget _buildProgressIndicator() {
-    print('_buildProgressIndicator:${_hasMore}');
     if(_hasMore){
       return new Padding(
         padding: const EdgeInsets.all(8.0),
