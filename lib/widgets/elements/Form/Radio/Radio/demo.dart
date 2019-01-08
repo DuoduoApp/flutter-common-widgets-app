@@ -14,16 +14,43 @@ class RadioADemo extends StatefulWidget {
 }
 
 class _Demo extends State<RadioADemo> {
-
+  int groupValue = 1;
+  onChange(val) {
+    this.setState(() {
+      groupValue = val;
+    });
+  }
   Widget build(BuildContext context) {
     return  (
-      new Radio(
-        key: Key('radio'),
-        value:'3',
-        groupValue: '3',
-        onChanged: (v) {
-          print('v > ${v}');
-        }
+      new Container(
+        alignment: Alignment.centerLeft,
+        child: new Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            new Radio(
+                value: 1,
+                groupValue: groupValue,//当value和groupValue一致的时候则选中
+                onChanged: (T){
+                  onChange(T);
+                }
+            ),
+            new Radio(
+                value: 2,
+                groupValue: groupValue,
+                onChanged: (T){
+                  onChange(T);
+                }
+            ),
+            new Radio(
+                value: 3,
+                groupValue: groupValue,
+                onChanged: (T){
+                  onChange(T);
+                }
+            )
+          ],
+        ),
       )
     );
   }
