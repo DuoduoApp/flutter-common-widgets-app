@@ -2,7 +2,7 @@
  * @Author: 三露 
  * @Date: 2019-01-07 16:36:43 
  * @Last Modified by: 三露
- * @Last Modified time: 2019-01-07 20:02:17
+ * @Last Modified time: 2019-01-08 14:12:32
  */
 
 import 'package:flutter/material.dart';
@@ -11,14 +11,14 @@ import './demo.dart';
 
 const String content0 = '''
 ### **简介**
-> 定义单色以及具有十种色调的色样
-- 颜色的阴影由索引引用。指数越大，颜色越深。总共有十个有效指数：50、100、200、...、900.
+> MaterialSlice 和 MaterialGap的基本类型
+- 所有的MergeableMaterialItem对象都需要LocalKey
 ''';
 
 const String content1 = '''
 ### **基础用法**
-> 这里我们配合Icon来进行演示
-- 颜色的值应与指数500和shade500的值相同
+> MaterialSlice进行演示
+- MaterialSlice做为 MergeableMaterial子类。它作为Material,可以和其他的slices合并使用
 ''';
 
 class Demo extends StatefulWidget {
@@ -41,3 +41,4 @@ class _DemoState extends State<Demo> {
     );
   }
 }
+
