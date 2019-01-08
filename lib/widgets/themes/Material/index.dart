@@ -6,6 +6,7 @@ import 'MaterialAccentColor/index.dart' as MaterialAccentColor;
 import 'MaterialApp/index.dart' as MaterialApp;
 import 'MaterialButton/index.dart' as MaterialButton;
 import 'MaterialColor/index.dart' as MaterialColor;
+import 'MergeableMaterialItem/index.dart' as MergeableMaterialItem;
 
 
 List<WidgetPoint> widgetPoints = [
@@ -35,6 +36,10 @@ WidgetPoint(
     routerName: MaterialAccentColor.Demo.routeName,
     buildRouter: (BuildContext context) => MaterialAccentColor.Demo(),
   ),
-  
+  WidgetPoint(
+    name: 'MergeableMaterialItem',
+    routerName: MergeableMaterialItem.Demo.routeName,
+    buildRouter: (BuildContext context) => MergeableMaterialItem.Demo(),
+  ),
   
 ];

@@ -1,9 +1,10 @@
 /*
- * @Author: 一凨 
- * @Date: 2018-12-27 16:25:22 
- * @Last Modified by: 一凨
- * @Last Modified time: 2018-12-27 16:35:39
+ * @Author: 三露 
+ * @Date: 2019-01-07 16:36:43 
+ * @Last Modified by: 三露
+ * @Last Modified time: 2019-01-07 20:02:17
  */
+
 import 'package:flutter/material.dart';
 import '../../../../common/widget_demo.dart';
 import './demo.dart';
@@ -21,7 +22,7 @@ const String content1 = '''
 ''';
 
 class Demo extends StatefulWidget {
-  static const String routeName = '/themes/Material/MaterialColor';
+  static const String routeName = '/themes/Material/MergeableMaterialItem';
   _DemoState createState() => _DemoState();
 }
 
@@ -32,11 +33,11 @@ class _DemoState extends State<Demo> {
       contentList: [
         content0,
         content1,
-        ColorDemo(),
+        MergeableMaterialItemDemo(),
       ],
-      title: "MaterialColor",
-      codeUrl: 'Material/MaterialColor/demo.dart',
-      docUrl: 'https://docs.flutter.io/flutter/material/MaterialColor-class.html',
+      title: "MergeableMaterialItem",
+      codeUrl: 'Material/MergeableMaterialItem/demo.dart',
+      docUrl: 'https://docs.flutter.io/flutter/material/MergeableMaterialItem-class.html',
     );
   }
 }
