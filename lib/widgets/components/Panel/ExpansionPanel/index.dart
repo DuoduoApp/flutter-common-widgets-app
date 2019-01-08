@@ -1,7 +1,7 @@
 /*
- * @Author: 三露 
+ * @Author: xiaojia.dxj
  * @Date: 2018-12-21 11:35:39 
- * @Last Modified by: 三露
+ * @Last Modified by: xiaojia.dxj
  * @Last Modified time: 2018-12-21 11:36:23
  */
 
@@ -34,7 +34,7 @@ class _DemoState extends State<Demo> {
           content1,
           ExpansionPanelsDemo(),
         ],
-        codeUrl: 'components/Chip/ExpansionPanel/demo.dart',
+        codeUrl: 'widgets/components/Panel/ExpansionPanel/demo.dart',
         docUrl:'https://docs.flutter.io/flutter/material/RawChip-class.html',
         title: 'ExpansionPanel');
   }

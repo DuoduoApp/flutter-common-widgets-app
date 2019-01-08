@@ -5,9 +5,7 @@ class LinearProgressIndicatorDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 200.0,
-      child: LinearProgressIndicator(
-      ),
+      child: LinearProgressIndicator(),
     );
   }
 }
-

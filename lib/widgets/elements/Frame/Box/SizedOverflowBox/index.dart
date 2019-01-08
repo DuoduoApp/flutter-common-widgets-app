@@ -1,3 +1,9 @@
+/*
+ * @Author: xiaojia.dxj
+ * @Date: 2019-01-08 15:55:31 
+ * @Last Modified by:   xiaojia.dxj
+ * @Last Modified time: 2019-01-08 15:55:31 
+ */
 import 'package:flutter/material.dart';
 import '../../../../../common/widget_demo.dart';
 import './demo.dart' as sizeBox;
@@ -36,7 +42,7 @@ class _DemoState extends State<Demo> {
   Widget build(BuildContext context) {
     return WidgetDemo(
       title: 'SizeOverflowBox',
-      codeUrl: 'elements/Frame/Box/SizeOverflowBox/demo.dart',
+      codeUrl: 'elements/Frame/Box/SizedOverflowBox/demo.dart',
       contentList: [
         // _Text,
         _Text0,

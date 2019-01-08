@@ -31,11 +31,10 @@ class StackDefault extends StatelessWidget {
             new Text("stack demo",
                 textDirection: TextDirection.ltr,
                 style: TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 5.0,
-                  color: Colors.white
-                )),
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 5.0,
+                    color: Colors.white)),
           ],
         ),
       ],
@@ -60,11 +59,10 @@ class StackDefault2 extends StatelessWidget {
             new Text("stack demo",
                 textDirection: TextDirection.ltr,
                 style: TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 5.0,
-                  color: Colors.white
-                )),
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 5.0,
+                    color: Colors.white)),
             new Container(
               color: new Color(0xfff48fb1),
               width: 100.0,

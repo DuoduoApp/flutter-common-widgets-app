@@ -28,8 +28,7 @@ class _DemoState extends State<Demo> {
       contentList: [
         Text,
         Text1,
-        IconThemeLayout()
-       ,
+        IconThemeLayout(),
       ],
       docUrl: 'https://docs.flutter.io/flutter/widgets/IconTheme-class.html',
     );
@@ -42,12 +41,25 @@ class IconThemeLayout extends StatelessWidget {
     return Column(
       children: <Widget>[
         IconThemeDemo(),
-        SizedBox(height: 20.0,),
-        IconThemeDemo(curColor: Colors.white,),
-         SizedBox(height: 20.0,),
-         IconThemeDemo(curColor: Colors.yellow,),
-         SizedBox(height: 20.0,),
-        IconThemeDemo2(curColor: Colors.white,curSize: 20.0,),
+        SizedBox(
+          height: 20.0,
+        ),
+        IconThemeDemo(
+          curColor: Colors.white,
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        IconThemeDemo(
+          curColor: Colors.yellow,
+        ),
+        SizedBox(
+          height: 20.0,
+        ),
+        IconThemeDemo2(
+          curColor: Colors.white,
+          curSize: 20.0,
+        ),
       ],
     );
   }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import '../../../../../common/widget_demo.dart';
-import './demo.dart' ;
+import './demo.dart';
 
 const String _stackText0 = """### **简介**
 > 用于将多个子级相对于其框的边缘定位，多用于以简单方式重叠children
@@ -63,7 +63,6 @@ class _DemoState extends State<Demo> {
           color: new Color(0xffe91e63),
           child: StackLayout(),
         ),
-        
       ],
     );
   }

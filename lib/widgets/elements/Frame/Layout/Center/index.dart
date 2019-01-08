@@ -29,7 +29,7 @@ class _DemoState extends State<Demo> {
   Widget build(BuildContext context) {
     return WidgetDemo(
       title: 'Center',
-      codeUrl: 'elements/Frame/Layout/Column/demo.dart',
+      codeUrl: 'elements/Frame/Layout/Center/demo.dart',
       docUrl: 'https://docs.flutter.io/flutter/widgets/Column-class.html',
       contentList: [
         Text0,

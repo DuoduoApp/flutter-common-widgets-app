@@ -1,6 +1,5 @@
 import 'package:flutter/widgets.dart';
 
-
 /**
  * Author: xiaojia.dxj
  * Date: 2018/11/22
@@ -11,7 +10,6 @@ import 'package:flutter/widgets.dart';
  * Describle:Colum describe
  */
 class ColumnDefault extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -71,7 +69,7 @@ class ColumnDefault extends StatelessWidget {
         Text('The code word is ‘Rochambeau,’ dig me?'),
         Text('Rochambeau!',
             style:
-            DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.0)),
+                DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.0)),
       ],
     );
   }

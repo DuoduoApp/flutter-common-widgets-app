@@ -57,7 +57,11 @@ class ContainerDefaultB extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       color: Colors.teal.shade700,
       alignment: Alignment.center,
-      child: Text('Hello World', style: Theme.of(context).textTheme.display1.copyWith(color: Colors.white)),
+      child: Text('Hello World',
+          style: Theme.of(context)
+              .textTheme
+              .display1
+              .copyWith(color: Colors.white)),
       foregroundDecoration: BoxDecoration(
         image: DecorationImage(
           image: NetworkImage('https://www.example.com/images/frame.png'),

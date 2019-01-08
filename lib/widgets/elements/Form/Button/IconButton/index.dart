@@ -19,7 +19,7 @@ import './demo.dart' as iconButton;
 const String _iconText0 =
 """### **简介**
 > Icon button “图标按钮”
-- IconButton 小部件上的图片，通过填充颜色（墨水）来对触摸作出反应。
+- IconButton widget上的图片，通过填充颜色（墨水）来对触摸作出反应。
 """;
 
 const String _iconText1 =

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import '../../../../../common/widget_demo.dart';
-import './demo.dart' ;
+import './demo.dart';
 
 const String _stackText0 = """### **简介**
 > 显示来自子项列表的单个子项。
@@ -53,7 +53,6 @@ class _DemoState extends State<Demo> {
   Column _IndexedStackCreate() {
     return new Column(
       children: <Widget>[
-        
         SizedBox(
           height: 10.0,
         ),

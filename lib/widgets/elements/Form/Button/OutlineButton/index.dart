@@ -32,7 +32,7 @@ const String _outlineText1 =
 
 const String _outlineText2 =
 """### **进阶用法1**
-> OutlineButton.icon 的用法，按钮图标和标签的小部件创建文本按钮。""";
+> OutlineButton.icon 的用法，按钮图标和标签的widget创建文本按钮。""";
 
 const String _outlineText3 =
 """### **进阶用法2**

@@ -100,7 +100,7 @@ class PopupMenuButtonCustom extends StatelessWidget {
     print('onSelected1:${widget.options}');
     final String selectStr = widget.options['defaultSelect'];
     return PopupMenuButton(
-        //如果提供，则用于此按钮的小部件。
+        //如果提供，则用于此按钮的widget。
         child: RaisedButton.icon(
           disabledColor:Colors.red,
           icon: Icon(Icons.message, size: 25.0,color:Colors.yellow),

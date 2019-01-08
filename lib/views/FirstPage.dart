@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_rookie_book/common/myListView.dart';
 //import 'package:flutter_rookie_book/components/CompList.dart';
 import 'package:flutter_rookie_book/components/ListRefresh.dart' as listComp;
 import 'package:flutter_rookie_book/components/Pagination.dart';
@@ -25,14 +26,6 @@ class FirstPageState extends State<FirstPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-  }
-
-  void _launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
   }
 
   Future<Map> getIndexListData([Map<String, dynamic> params]) async {
@@ -61,46 +54,16 @@ class FirstPageState extends State<FirstPage> {
   }
 
   Widget makeCard(index,item){
-    const emojis = ['👤','🙏','👲','💪','🐞','🐙','⭐','🍭','⏰','🎁','💾','🔔','💘'];
+    const emojis = ['👲'];
     var smallParts_Color = Colors.primaries[index % Colors.primaries.length];
     var smallParts_icon = IconNames.Names[index % IconNames.Names.length];
     var smallParts_emojis = IconNames.Names[index % IconNames.Names.length];
 
     var myTitle = '${item.title}';
-    var myUsername = '${emojis[index % emojis.length]}:【 ${item.username} 】';
+    var myUsername = '${'👲'}: ${item.username} ';
     var codeUrl = '${item.detailUrl}';
 
-    return new Card(
-      //color: Colors.primaries[index % Colors.primaries.length],
-        color: Colors.white,
-        elevation: 8.0,
-        margin: new EdgeInsets.symmetric(horizontal: 10.0, vertical: 6.0),
-        child:ListTile(
-            onTap:(){
-              _launchURL(codeUrl);
-            },
-            contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-            leading: Container(
-              padding: EdgeInsets.only(right: 12.0),
-              decoration: new BoxDecoration(
-                  border: new Border(
-                      right: new BorderSide(width: 1.0, color: Colors.grey))),
-              child: Icon(smallParts_icon, color: smallParts_Color),
-            ),
-            title: Text(
-              myTitle,
-              style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold,fontSize:18.0),
-            ),
-            // subtitle: Text("Intermediate", style: TextStyle(color: Colors.white)),
-
-            subtitle: Row(
-              children: <Widget>[
-                //Icon(Icons.linear_scale, color: smallParts_Color),
-                Text( myUsername, style: TextStyle(color: Colors.black54,fontSize:14.0))
-              ],
-            ),
-            trailing: Icon(Icons.keyboard_arrow_right, color: smallParts_Color, size: 30.0))
-    );
+    return new MyListView(currCodeUrl:codeUrl,currTitle: myTitle,developer: myUsername,);
   }
 
   @override

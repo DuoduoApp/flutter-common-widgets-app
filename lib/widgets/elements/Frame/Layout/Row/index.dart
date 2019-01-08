@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../../common/widget_demo.dart';
-import './demo.dart' as row;
+import './demo.dart';
 
 const String Text0 = """### **简介**
 > Row 是一个将其孩子显示在水平数组的小部件
@@ -38,8 +38,7 @@ class _DemoState extends State<Demo> {
     return WidgetDemo(
       title: 'Row',
       // desc: 'Layout-Row 使用',
-      codeUrl:
-          'https://github.com/alibaba-paimai-frontend/flutter-common-widgets-app/blob/dev/sanlu-0.0.4/lib/widgets/elements/Frame/Layout/Row/demo.dart',
+      codeUrl: 'elements/Frame/Layout/Row/demo.dart',
       docUrl: 'https://docs.flutter.io/flutter/widgets/Row-class.html',
       contentList: [
         Text0,
@@ -52,7 +51,7 @@ class _DemoState extends State<Demo> {
   Column _RowCreate() {
     return new Column(
       children: <Widget>[
-        row.RowLayout(),
+        RowLayout(),
         Row(
           children: <Widget>[
             Expanded(
@@ -81,22 +80,17 @@ class _DemoState extends State<Demo> {
           ],
         ),
         SizedBox(height: 30.0),
-        row.RowMainAxisAlignment(MainAxisAlignment.spaceEvenly, null),
+        RowMainAxisAlignment(MainAxisAlignment.spaceEvenly, null),
         SizedBox(height: 10.0),
-        row.RowMainAxisAlignment(MainAxisAlignment.spaceAround, null),
+        RowMainAxisAlignment(MainAxisAlignment.spaceAround, null),
         SizedBox(height: 10.0),
-        row.RowMainAxisAlignment(MainAxisAlignment.spaceBetween, null),
+        RowMainAxisAlignment(MainAxisAlignment.spaceBetween, null),
         SizedBox(height: 30.0),
-
-        row.RowMainAxisAlignment(MainAxisAlignment.start, null),
+        RowMainAxisAlignment(MainAxisAlignment.start, null),
         SizedBox(height: 10.0),
-        row.RowMainAxisAlignment(MainAxisAlignment.center, null),
+        RowMainAxisAlignment(MainAxisAlignment.center, null),
         SizedBox(height: 10.0),
-        row.RowMainAxisAlignment(MainAxisAlignment.end, null),
-
-
-
-
+        RowMainAxisAlignment(MainAxisAlignment.end, null),
       ],
     );
   }

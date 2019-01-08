@@ -15,6 +15,9 @@ import 'BottomAppBar/index.dart' as BottomAppBar;
 import 'FlexibleSpaceBar/index.dart' as FlexibleSpaceBar;
 import 'ButtonBar/index.dart' as ButtonBar;
 import 'SnackBar/index.dart' as SnackBar;
+import 'SnackBarAction/index.dart' as SnackBarAction;
+import 'TabBar/index.dart' as TabBar;
+
 
 List<WidgetPoint> widgetPoints = [
   WidgetPoint(
@@ -46,5 +49,20 @@ List<WidgetPoint> widgetPoints = [
     name: 'SnackBar',
     routerName: SnackBar.Demo.routeName,
     buildRouter: (BuildContext context) => SnackBar.Demo(),
-  )
+  ),
+  WidgetPoint(
+    name: 'SnackBarAction',
+    routerName: SnackBarAction.Demo.routeName,
+    buildRouter: (BuildContext context) => SnackBarAction.Demo(),
+  ),
+  WidgetPoint(
+    name: 'TabBar',
+    routerName: TabBar.Demo.routeName,
+    buildRouter: (BuildContext context) => TabBar.Demo(),
+  ),
+  WidgetPoint(
+    name: 'TabBarView',
+    routerName: TabBar.Demo.routeName,
+    buildRouter: (BuildContext context) => TabBar.Demo(),
+  ),
 ];

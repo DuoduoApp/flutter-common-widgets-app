@@ -23,6 +23,8 @@ class Routes {
           handlerFunc: (BuildContext context, Map<String, List<String>> params) {
             return demo.buildRouter(context);
       });
+
+
       router.define('${demo.routerName}', handler: handler);
     });
   }

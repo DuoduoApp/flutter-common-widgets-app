@@ -1,3 +1,9 @@
+/*
+ * @Author: xiaojia.dxj
+ * @Date: 2019-01-08 15:56:31 
+ * @Last Modified by:   xiaojia.dxj
+ * @Last Modified time: 2019-01-08 15:56:31 
+ */
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import '../../../../../common/widget_demo.dart';
@@ -78,7 +84,6 @@ class _DemoState extends State<Demo> {
             curalignment: Alignment.topRight,
           ),
         ),
-
       ],
     );
   }

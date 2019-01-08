@@ -36,12 +36,8 @@ class _DemoState extends State<Demo> {
   Widget build(BuildContext context) {
     return WidgetDemo(
       title: 'Align',
-      codeUrl:
-          'https://github.com/alibaba-paimai-frontend/flutter-common-widgets-app/blob/dev/sanlu-0.0.4/lib/widgets/elements/Frame/Align/Align/demo.dart',
+      codeUrl:"elements/Frame/Align/Align/demo.dart",
       docUrl: 'https://docs.flutter.io/flutter/widgets/Align-class.html',
-      // child: new Container(
-      //   child: _AlignCreate(),
-      // ),
       contentList: [
         _flatText0,
         _flatText1,
