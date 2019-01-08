@@ -19,15 +19,6 @@ const contentText1 = '''
 - RawImage 是通过 paintImage 绘制出来的Image。这个方法更加详细的描述了各个字段的含义
 - 传递给RawImage中的Image是dart：ui下的Image而不是Material下的Image，见Demo注释
 
-```
-  Future<ui.Image> _loadImageByAsset(String asset) async {
-    ByteData data = await rootBundle.load(asset);
-    ui.Codec codec = await ui.instantiateImageCodec(data.buffer.asUint8List());
-    ui.FrameInfo fi = await codec.getNextFrame();
-
-    return fi.image;
-  }
-```
 ''';
 
 const contentText2= '''

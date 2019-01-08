@@ -28,7 +28,7 @@ dependencies:
   fluttertoast: ^2.2.2
   # 本地存储、收藏功能
   shared_preferences: ^0.4.3
-  
+  dio: ^1.0.6
 
 dev_dependencies:
   flutter_test:

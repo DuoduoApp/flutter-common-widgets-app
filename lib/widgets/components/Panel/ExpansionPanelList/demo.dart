@@ -15,6 +15,10 @@ enum Location {
 typedef DemoItemBodyBuilder<T> = Widget Function(DemoItem<T> item);
 typedef ValueToString<T> = String Function(T value);
 
+/**
+ * google flutter 详情多个例子地址：
+ * https://github.com/flutter/flutter/blob/master/examples/flutter_gallery/lib/demo/material/expansion_panels_demo.dart
+ */
 class DualHeaderWithHint extends StatelessWidget {
   const DualHeaderWithHint({
     this.name,

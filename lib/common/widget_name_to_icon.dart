@@ -136,6 +136,9 @@ class WidgetName2Icon {
     "MonthPicker":Icons.date_range,
     "YearPicker":Icons.event_busy,
     "ShowdatePicker":Icons.event,
+    "MaterialPageRoute":Icons.album,
+     "MaterialAccentColor":Icons.brush,
+
 
   };
 }

@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rookie_book/common/widget_demo.dart';
-// import './demo.dart';
+import './demo.dart';
 
 const Text0 = '''
 ### **简介**
+> 页面跳转携带参数替换整个屏幕的页面路由。
+- 对于Android，页面的进入以下方滑动向上，页面退出，以上方滑动向下方。在ios上，页面进度从右边滑入，退出相反。
+- 默认情况下，当路由器被另外一个替换时，前一个路由将被保留在内存中，如果希望在不需要的时候能够释放资源，请将maintainState设置为false
 ''';
 
 const String Text1 = """
 ### **基本用法**
+> 如下图示例：
 
 """;
 
@@ -28,6 +32,7 @@ class _DemoState extends State<Demo> {
       contentList: [
         Text0,
         Text1,
+        FirstPage(),
       ],
     );
   }
