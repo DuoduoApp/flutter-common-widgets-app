@@ -2,7 +2,7 @@
  * @Author: 三露 
  * @Date: 2018-12-20 20:30:41 
  * @Last Modified by: 三露
- * @Last Modified time: 2018-12-24 14:32:22
+ * @Last Modified time: 2019-01-08 16:15:20
  */
 
 import 'package:flutter/material.dart';
@@ -40,7 +40,7 @@ class _DemoState extends State<Demo> {
           content1,
           ExpansionPanelsDemo(),
         ],
-        codeUrl: 'components/Chip/RawChip/demo.dart',
+        codeUrl: 'components/Panel/ExpansionPanelList/demo.dart',
         docUrl:'https://docs.flutter.io/flutter/material/RawChip-class.html',
         title: 'RawChip');
   }

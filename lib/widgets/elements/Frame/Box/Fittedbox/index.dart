@@ -1,3 +1,9 @@
+/*
+ * @Author: 三露 
+ * @Date: 2019-01-08 15:56:45 
+ * @Last Modified by:   三露 
+ * @Last Modified time: 2019-01-08 15:56:45 
+ */
 import 'package:flutter/material.dart';
 import '../../../../../common/widget_demo.dart';
 import './demo.dart' as fittedBox;
@@ -28,7 +34,7 @@ class _DemoState extends State<Demo> {
   Widget build(BuildContext context) {
     return WidgetDemo(
       title: 'FittedBox',
-      codeUrl: 'elements/Frame/Box/FittedBox/demo.dart',
+      codeUrl: 'elements/Frame/Box/Fittedbox/demo.dart',
       docUrl: 'https://docs.flutter.io/flutter/widgets/FittedBox-class.html',
       contentList: [
         Text0,

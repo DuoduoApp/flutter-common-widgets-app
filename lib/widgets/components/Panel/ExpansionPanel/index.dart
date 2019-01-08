@@ -34,7 +34,7 @@ class _DemoState extends State<Demo> {
           content1,
           ExpansionPanelsDemo(),
         ],
-        codeUrl: 'components/Chip/ExpansionPanel/demo.dart',
+        codeUrl: 'widgets/components/Panel/ExpansionPanel/demo.dart',
         docUrl:'https://docs.flutter.io/flutter/material/RawChip-class.html',
         title: 'ExpansionPanel');
   }
